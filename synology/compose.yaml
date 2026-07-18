@@ -1,0 +1,32 @@
+services:
+  bibliofuse:
+    image: "${BIBLIOFUSE_IMAGE:-ghcr.io/mlt-solutions/bibliofuse-nas:latest}"
+    container_name: bibliofuse-nas
+    user: "${PUID:-1026}:${PGID:-100}"
+    read_only: true
+    init: true
+    restart: unless-stopped
+    ports:
+      - "7342:7342"
+      - "7343:7343"
+    environment:
+      BF_CONFIG_DIR: /config
+      BF_CACHE_DIR: /cache
+      BF_LIBRARY_DIR: /library
+      BF_SERVER_PIN: "${BF_SERVER_PIN:-}"
+      BF_DISCOVERY_MODE: disabled
+      BF_SERVICE_NAME: "${BF_SERVICE_NAME:-BiblioFuse NAS}"
+      BF_LAN_HOST: "${BF_LAN_HOST:-}"
+      BF_TAILSCALE_HOST: "${BF_TAILSCALE_HOST:-}"
+      BF_TRUSTED_PROXIES: "${BF_TRUSTED_PROXIES:-}"
+      BF_TIME_ZONE: "${BF_TIME_ZONE:-UTC}"
+    volumes:
+      - "${CONFIG_PATH:?Select a persistent BiblioFuse config folder}:/config"
+      - "${CACHE_PATH:?Select a BiblioFuse cache folder}:/cache"
+      - "${LIBRARY_PATH:?Select your book library}:/library:ro"
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
