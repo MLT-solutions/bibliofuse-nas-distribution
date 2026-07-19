@@ -36,8 +36,8 @@ docker compose ps
 docker compose logs --tail=100 bibliofuse
 ```
 
-Open `http://<server-ip>:7343`. Create the administrator, confirm the automatically
-created `/library` root in Settings, and choose Refresh.
+Open `http://<server-ip>:7343`. Create the administrator, confirm or change the
+automatically created **Library** root with the folder picker, and choose Refresh.
 
 The first refresh walks the complete library. Later refreshes still check the folder
 tree, but unchanged archive metadata is reused.
@@ -51,10 +51,17 @@ new read-only mount to `compose.yaml`, for example:
 volumes:
   - "/srv/books:/library:ro"
   - "/srv/manga:/books/manga:ro"
+environment:
+  BF_LIBRARY_BROWSE_ROOTS: >-
+    [{"name":"Library","path":"/library"},{"name":"Manga","path":"/books/manga"}]
 ```
 
-Recreate the container, then use Settings → Add root with `/books/manga`. Do not enter
-the host path `/srv/manga` in the web UI.
+Recreate the container, then use Settings → Add root and select **Manga** in the folder
+picker. Users do not type either `/books/manga` or the host path `/srv/manga` in the web
+UI.
+
+Use **Change folder** if a mounted folder was renamed; BiblioFuse keeps the root's
+catalog identity. **Remove** works for the last root too and never deletes book files.
 
 ## 5. Schedule refresh
 

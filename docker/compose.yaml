@@ -13,6 +13,7 @@ services:
       BF_CONFIG_DIR: /config
       BF_CACHE_DIR: /cache
       BF_LIBRARY_DIR: /library
+      BF_LIBRARY_BROWSE_ROOTS: "${BF_LIBRARY_BROWSE_ROOTS:-}"
       BF_SERVER_PIN: "${BF_SERVER_PIN:-}"
       BF_DISCOVERY_MODE: disabled
       BF_SERVICE_NAME: "${BF_SERVICE_NAME:-BiblioFuse NAS}"

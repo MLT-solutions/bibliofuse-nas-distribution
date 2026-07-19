@@ -87,11 +87,14 @@ docker compose up -d
 
 5. Open `http://<server-ip>:7343`.
 6. Create the first administrator account.
-7. Open Settings, confirm the default **Library** root, and select **Refresh**.
+7. Open Settings, use the folder picker to confirm or change the default **Library**
+   root, and select **Refresh**.
 
 The Compose file mounts your real book folder at `/library`. BiblioFuse automatically
 creates the first Library Root for `/library`; you do not need to add it manually.
-Use **Add root** only when you have mounted additional book folders into the container.
+Settings displays the friendly name **Library**, not the internal container path. Use
+**Add root** only when you have mounted additional book folders into the container and
+declared them in `BF_LIBRARY_BROWSE_ROOTS`.
 
 See the [Docker installation guide](docs/docker-install.md) for updates, backups,
 permissions, remote access and troubleshooting.
@@ -107,6 +110,9 @@ http://<nas-ip>:7343
 
 The book folder is mounted read-only. The config and cache folders must be writable by
 the numeric `PUID` and `PGID` selected for the container.
+
+Library roots can be changed, disabled, or removed in Settings. Removing a root,
+including the last one, never deletes books and leaves a valid empty library.
 
 See the [Synology tutorial](docs/synology-container-manager.md) for a complete walkthrough.
 

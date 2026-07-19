@@ -55,11 +55,13 @@ http://<nas-ip>:7343
 ```
 
 Create an administrator password of at least 12 characters. The default **Library**
-root already points to `/library`, which is the container view of `LIBRARY_PATH`.
-Confirm it in Settings and choose Refresh.
+root already uses `LIBRARY_PATH`. Confirm or change it with the folder picker in
+Settings, then choose Refresh. No DSM or container path needs to be typed.
 
 You only add another root after mounting another NAS folder at a distinct container
-path.
+path and declaring that mount in `BF_LIBRARY_BROWSE_ROOTS`. Roots can be changed,
+disabled, or removed; removing one never deletes files, and removing the last root
+leaves a valid empty library.
 
 ## 5. Reading and refresh
 
