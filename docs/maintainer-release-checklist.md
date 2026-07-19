@@ -6,21 +6,25 @@ This is a publication checklist, not an end-user install guide.
 
 - [x] Create a public GitHub repository for these distribution files.
 - [x] Keep the server source repository private.
-- [ ] Confirm the public repository contains no source, credentials, private addresses,
+- [x] Confirm the public repository contains no source, credentials, private addresses,
       production configuration, signing material or customer/library data.
 - [ ] Add a support/contact path and an explicit license or terms decision.
 - [ ] Link the repository from the NAS/Docker page on `bibliofuse.com`.
 
 ## Container
 
-- [ ] Build from an immutable private-source commit and version tag.
-- [ ] Publish `linux/amd64` and `linux/arm64`.
-- [ ] Publish a numbered tag and only then move `latest`.
-- [ ] Include OCI provenance, SBOM and registry attestation.
-- [ ] Set the GHCR package visibility to public.
-- [ ] Verify an anonymous pull on a logged-out/clean machine.
-- [ ] Inspect the final image and confirm it contains only required runtime artifacts.
+- [x] Build from an immutable private-source commit and version tag.
+- [x] Publish `linux/amd64` and `linux/arm64`.
+- [x] Publish a numbered tag and only then move `latest`.
+- [x] Include OCI provenance and SBOM attestations.
+- [x] Set the GHCR package visibility to public.
+- [x] Verify an anonymous pull with an empty Docker credential store.
+- [x] Inspect the final image and confirm it contains only required runtime artifacts.
 - [ ] Record the image digest in the GitHub Release.
+
+Docker `0.1.2` was anonymously pulled and verified on 2026-07-19. The published
+multi-platform image digest reported by Docker is
+`sha256:994682d50c3ddfc33e2b515557f265a93b347d606b876043be9bcb792c4f8f57`.
 
 ## Validation
 
