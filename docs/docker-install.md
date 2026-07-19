@@ -61,7 +61,9 @@ picker. Users do not type either `/books/manga` or the host path `/srv/manga` in
 UI.
 
 Use **Change folder** if a mounted folder was renamed; BiblioFuse keeps the root's
-catalog identity. **Remove** works for the last root too and never deletes book files.
+catalog identity. **Disable** retains catalog data. **Remove** works for the last root
+too and purges that root's BiblioFuse catalog, metadata and reading progress without
+deleting book files or folders.
 
 ## 5. Schedule refresh
 
@@ -87,9 +89,17 @@ docker compose down
 ```
 
 This removes the container and network. It does not delete the host config, cache or
-library folders. Deleting `/config` removes the BiblioFuse account, server identity,
-settings and catalog. Do not delete it as a password-reset shortcut without first
-making a backup.
+library folders.
+
+For an explicit factory reset:
+
+1. Run `docker compose down`.
+2. Back up the host folders named by `CONFIG_PATH` and `CACHE_PATH`.
+3. Rename those two folders as retained backups and create new empty folders with the
+   same original names and permissions.
+4. Run `docker compose up -d` and create a new administrator.
+
+Never rename, empty or delete `LIBRARY_PATH`. BiblioFuse mounts it read-only.
 
 ## Browser access outside the home
 
@@ -134,6 +144,7 @@ or incomplete `.env`.
 
 ### Administrator password is lost
 
-There is no email recovery. Preserve `/config` and consult the recovery instructions
-for the exact installed release before changing files. Recreating only the container
-does not reset the password because the verifier is stored in `/config`.
+There is no email recovery. Recreating only the container does not reset the password
+because the verifier is stored in `/config`. Use the explicit factory-reset procedure
+above if losing the existing BiblioFuse account, identity, catalog and settings is
+acceptable; the library itself remains untouched.

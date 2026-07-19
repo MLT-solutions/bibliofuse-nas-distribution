@@ -23,11 +23,11 @@ The BiblioFuse server source code is maintained separately and is not included h
 
 | Host or client | Availability | Reading and connection support |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Prepared for first public release | Free server and free browser UI |
+| Docker / Synology Container Manager | Public beta `0.1.2` | Free server and free browser UI |
 | BiblioFuse web reader | Included | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT and Markdown |
 | Released iOS / visionOS apps with Docker | Not supported yet | There is no supported Docker-to-native-app connection flow in the released apps |
-| Synology Package Center app (`.spk`) | Planned | Easier installation and supported iOS/visionOS native streaming are planned |
-| iOS / visionOS native streaming from the planned Synology app | Planned Premium feature | Requires BiblioFuse Premium in the native client |
+| Synology Package Center app (`.spk`) | Private beta validated; public package pending | DS923+ x86-64 install, folder selection, scanning, reading and uninstall lifecycle physically tested |
+| iOS / visionOS native streaming from the Synology app | Validation pending | Local Wi-Fi and Tailscale pairing tests remain before this is declared supported |
 | BiblioFuse Mac / PC host | Separate product | Recommended when the smoothest native streaming performance is the priority |
 
 Do not buy BiblioFuse Premium solely for Docker-to-iOS or Docker-to-visionOS
@@ -112,9 +112,21 @@ The book folder is mounted read-only. The config and cache folders must be writa
 the numeric `PUID` and `PGID` selected for the container.
 
 Library roots can be changed, disabled, or removed in Settings. Removing a root,
-including the last one, never deletes books and leaves a valid empty library.
+including the last one, clears that root's BiblioFuse catalog, metadata and reading
+progress without deleting books or folders.
 
 See the [Synology tutorial](docs/synology-container-manager.md) for a complete walkthrough.
+
+## Native Synology package status
+
+The x86-64 package behavior has passed physical DS923+ testing. The tested artifact was
+bound to that NAS's existing shared-folder name and private LAN configuration, so it is
+deliberately not published here. Synology's supported data-share resource requires the
+share name to be hard-coded; a generic public package needs a safe install-time share
+selection design before release.
+
+See the [native Synology package status](docs/synology-package.md) for the validated
+behavior and remaining publication work.
 
 ## Library refresh
 
@@ -152,9 +164,10 @@ password manager.
   not make the current released iOS or visionOS app support Docker pairing.
 - Port `7341` is reserved and must never be published.
 
-There is no email-based password recovery. If the password is lost, do not delete the
-library. Preserve the mounted config folder and follow the recovery instructions for
-the installed version.
+There is no email-based password recovery. For Docker, recreating only the container
+does not reset the password because `/config` is persistent; use the documented explicit
+factory reset after making a backup. For the Synology package, uninstall and reinstall
+resets all BiblioFuse-owned data without touching the library.
 
 ## Backups and updates
 
@@ -174,6 +187,9 @@ docker compose up -d
 Removing or recreating the container does not remove your account or catalog when the
 same config folder remains mounted.
 
+Removing a Library Root is different: it purges that root's BiblioFuse catalog,
+annotations and reading progress while leaving the read-only library files intact.
+
 ## Downloads and releases
 
 The intended public release channels are:
@@ -181,12 +197,13 @@ The intended public release channels are:
 - **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas`
 - **Docker and Synology Container Manager templates:** this repository
 - **Version notes and downloadable assets:** GitHub Releases
-- **Synology `.spk`:** GitHub Releases for manual Package Center installation when the
-  package is ready
+- **Synology `.spk`:** GitHub Releases after generic shared-folder selection and a
+  second physical validation pass
 - **Product overview and native apps:** [bibliofuse.com](https://bibliofuse.com)
 
-The `.spk` is planned and is not yet available. Until a release is published, treat
-this repository as installation preparation rather than a finished public download.
+The Docker image is a public beta. The native x86-64 `.spk` has passed a private
+machine-specific test but is not yet a public download. Generic shared-folder selection
+and native iOS/visionOS connection over local Wi-Fi and Tailscale remain pending.
 
 ## Help
 
@@ -194,6 +211,7 @@ Start with:
 
 - [Docker installation and operations](docs/docker-install.md)
 - [Synology Container Manager tutorial](docs/synology-container-manager.md)
+- [Native Synology package status](docs/synology-package.md)
 - [Performance guide](docs/performance.md)
 - [Release channels and support boundary](docs/releases-and-native-apps.md)
 

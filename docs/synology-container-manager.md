@@ -1,7 +1,8 @@
 # Synology Container Manager tutorial
 
-This guide installs the free Docker server and web UI. It is not the planned native
-Synology Package Center app.
+This guide installs the free Docker server and web UI through Container Manager. For
+the separately tested native DSM package, see the
+[Synology package guide](synology-package.md).
 
 ## Requirements
 
@@ -60,8 +61,9 @@ Settings, then choose Refresh. No DSM or container path needs to be typed.
 
 You only add another root after mounting another NAS folder at a distinct container
 path and declaring that mount in `BF_LIBRARY_BROWSE_ROOTS`. Roots can be changed,
-disabled, or removed; removing one never deletes files, and removing the last root
-leaves a valid empty library.
+disabled, or removed. Disable retains catalog data. Remove purges that root's
+BiblioFuse catalog, metadata and reading progress without deleting files or folders;
+removing the last root leaves a valid empty library.
 
 ## 5. Reading and refresh
 
@@ -84,6 +86,10 @@ decompress and prepare pages faster.
 
 Never select an uninstall option that deletes the mapped config or library folders.
 
+For a Container Manager factory reset, stop the project, back up and rename the
+configured config and cache folders, create new empty folders with the original names
+and permissions, then restart. Never include the library folder in this cleanup.
+
 ## 7. Network boundary
 
 - `7343`: free browser UI on a trusted LAN
@@ -91,5 +97,6 @@ Never select an uninstall option that deletes the mapped config or library folde
 - `7341`: do not publish
 
 Container Manager installation does not currently pair with the released iOS or
-visionOS apps. The planned `.spk` is a separate future distribution with supported
-native pairing; native streaming is intended to remain a Premium client feature.
+visionOS apps. The native `.spk` has a native streaming listener, but local Wi-Fi and
+Tailscale pairing remain pending physical validation; native streaming remains subject
+to the native app's Premium feature boundary.

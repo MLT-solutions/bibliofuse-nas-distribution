@@ -1,6 +1,6 @@
 services:
   bibliofuse:
-    image: "${BIBLIOFUSE_IMAGE:-ghcr.io/mlt-solutions/bibliofuse-nas:latest}"
+    image: "${BIBLIOFUSE_IMAGE:-ghcr.io/mlt-solutions/bibliofuse-nas:0.1.2}"
     container_name: bibliofuse-nas
     user: "${PUID:-1026}:${PGID:-100}"
     read_only: true
