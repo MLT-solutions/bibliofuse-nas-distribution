@@ -56,12 +56,12 @@ environment:
     [{"name":"Library","path":"/library"},{"name":"Manga","path":"/books/manga"}]
 ```
 
-Recreate the container, then use Settings → Add root and select **Manga** in the folder
+Recreate the container, then use Settings → Attach library and select **Manga** in the folder
 picker. Users do not type either `/books/manga` or the host path `/srv/manga` in the web
 UI.
 
-Use **Change folder** if a mounted folder was renamed; BiblioFuse keeps the root's
-catalog identity. **Disable** retains catalog data. **Remove** works for the last root
+Use **Change** if a mounted folder was renamed; BiblioFuse keeps the root's catalog
+identity. **Disable** retains catalog data. **Detach** works for the last root
 too and purges that root's BiblioFuse catalog, metadata and reading progress without
 deleting book files or folders.
 

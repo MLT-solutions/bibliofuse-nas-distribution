@@ -2,51 +2,64 @@
 
 ## Current status
 
-The `0.1.0-0008` x86-64 package passed installation, first-run setup, folder selection,
-catalog refresh, browser reading, safe root removal and complete package-data cleanup
-on uninstall on a physical Synology DS923+.
+The generic `0.1.0-0009` x86-64 package is a release candidate for DSM 7. It replaces
+the earlier machine-specific test package with a non-root, layman-friendly access flow:
 
-That tested artifact was intentionally built with the test NAS's existing share name and
-private LAN address. It is not a generic package and is not published in this public
-repository.
+- no shared-folder name, NAS address or library path is baked into the package;
+- books remain in their existing DSM shared folders;
+- BiblioFuse cannot grant itself access or change DSM permissions;
+- Settings explains how to grant the restricted package account read-only access;
+- Attach and Detach control indexing only and never delete library files.
 
-## Public-release blocker
+The package is not a container. Package Center owns lifecycle, the main-menu icon and
+the restricted system-internal account.
 
-Synology's supported `data-share` package resource requires a shared-folder name to be
-hard-coded in the package. The physical test used that mechanism to give the low-
-privilege package account read-only access to an existing library.
+## Install and grant access
 
-A public package cannot assume that every user has the same share name. Publishing the
-tested artifact would expose private configuration and fail for other users. The public
-package therefore remains pending until it can safely select or obtain permission for
-an existing share during installation without running the service as root.
+1. Install the x86-64 `.spk` through Package Center → Manual Install.
+2. Open BiblioFuse NAS and create an administrator using at least 12 characters.
+3. Open Settings → **Show the 6 steps**, or follow them here:
+   1. Open DSM **Control Panel** → **Shared Folder**.
+   2. Select the existing shared folder that contains your books and choose **Edit**.
+   3. Open **Permissions**.
+   4. Change the dropdown to **System internal user**.
+   5. Find `BiblioFuseNAS`, grant **Read only**, and save.
+   6. Return to BiblioFuse → **Attach library** → **Refresh access**, then choose the
+      share or a book subfolder.
+4. Select **Refresh books**.
 
-The public artifact will require another physical installation, upgrade and uninstall
-pass before release. ARM64 also remains unbuilt and untested.
+No `/volume1/...` or `/var/packages/...` path needs to be typed. No package restart is
+needed after granting access.
 
 ## Data lifecycle
 
-- **Disable root:** retain its catalog and allow it to be enabled again.
-- **Remove root:** purge that root's BiblioFuse catalog, metadata and reading progress.
-- **Upgrade package:** preserve account, identity, settings, catalog and cache.
+- **Disable:** retain the catalog and allow the attachment to be enabled again.
+- **Detach:** purge that attachment's BiblioFuse catalog, metadata and reading progress.
+- **Upgrade package:** preserve account, certificate identity, settings, catalog and
+  cache.
 - **Uninstall package:** wipe all BiblioFuse-owned account, password, identity, settings,
   catalog, log and cache data.
 - **Library:** always remain outside BiblioFuse package data and never be deleted.
 
-The tested package service received read-only access to the selected library share.
+An upgrade from the private v8 test package migrates its package-share alias to the
+normal DSM volume path while preserving the root identity.
 
-## Ports and current support boundary
+## Network and current support boundary
 
 - `7343/tcp`: free browser library and reader on the trusted LAN.
 - `7342/tcp`: pinned-HTTPS native-client listener.
 - `7341/tcp`: reserved and never used.
 
-Local Wi-Fi and Tailscale pairing with the released iOS/visionOS apps remain pending
-physical validation. Do not treat that connection path as supported until the release
-notes say the tests have passed.
+At start, the package derives the active private LAN address from DSM and advertises
+Bonjour directly from the NAS host. If DSM Tailscale is active, the `tailscale0` address
+is included as an optional manual-connection suggestion. Large native JSON responses
+include `Content-Length` for compatibility with the released Apple pinned transport.
 
-## Beta label
+Local Wi-Fi and Tailscale pairing with released iOS/visionOS apps remain a physical
+release gate. Do not treat that connection path as supported until its release notes say
+the tests passed. Native streaming remains subject to the native app's Premium boundary.
 
-The `beta=yes` package field only displays beta status in Package Center. It is not a
-time-limited trial, and the tested package contains no expiration timer. A later upgrade
-may still be required for compatibility, security or support.
+## Architecture
+
+The initial package supports Synology x86-64. ARM64 remains unbuilt and untested. Check
+your NAS CPU architecture before downloading a release.

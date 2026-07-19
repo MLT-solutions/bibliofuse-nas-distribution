@@ -23,10 +23,10 @@ The BiblioFuse server source code is maintained separately and is not included h
 
 | Host or client | Availability | Reading and connection support |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Public beta `0.1.2` | Free server and free browser UI |
+| Docker / Synology Container Manager | Public beta `0.1.3` | Free server and free browser UI |
 | BiblioFuse web reader | Included | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT and Markdown |
 | Released iOS / visionOS apps with Docker | Not supported yet | There is no supported Docker-to-native-app connection flow in the released apps |
-| Synology Package Center app (`.spk`) | Private beta validated; public package pending | DS923+ x86-64 install, folder selection, scanning, reading and uninstall lifecycle physically tested |
+| Synology Package Center app (`.spk`) | Generic x86-64 release candidate | Non-root package with guided read-only access to existing DSM shared folders |
 | iOS / visionOS native streaming from the Synology app | Validation pending | Local Wi-Fi and Tailscale pairing tests remain before this is declared supported |
 | BiblioFuse Mac / PC host | Separate product | Recommended when the smoothest native streaming performance is the priority |
 
@@ -93,7 +93,7 @@ docker compose up -d
 The Compose file mounts your real book folder at `/library`. BiblioFuse automatically
 creates the first Library Root for `/library`; you do not need to add it manually.
 Settings displays the friendly name **Library**, not the internal container path. Use
-**Add root** only when you have mounted additional book folders into the container and
+**Attach library** only when you have mounted additional book folders into the container and
 declared them in `BF_LIBRARY_BROWSE_ROOTS`.
 
 See the [Docker installation guide](docs/docker-install.md) for updates, backups,
@@ -111,7 +111,7 @@ http://<nas-ip>:7343
 The book folder is mounted read-only. The config and cache folders must be writable by
 the numeric `PUID` and `PGID` selected for the container.
 
-Library roots can be changed, disabled, or removed in Settings. Removing a root,
+Library folders can be changed, disabled, or detached in Settings. Detaching one,
 including the last one, clears that root's BiblioFuse catalog, metadata and reading
 progress without deleting books or folders.
 
@@ -119,14 +119,13 @@ See the [Synology tutorial](docs/synology-container-manager.md) for a complete w
 
 ## Native Synology package status
 
-The x86-64 package behavior has passed physical DS923+ testing. The tested artifact was
-bound to that NAS's existing shared-folder name and private LAN configuration, so it is
-deliberately not published here. Synology's supported data-share resource requires the
-share name to be hard-coded; a generic public package needs a safe install-time share
-selection design before release.
+The generic x86-64 package runs as the restricted `BiblioFuseNAS` DSM account and does
+not create, move or assume a library folder. A Settings guide shows how to grant that
+account read-only access to an existing shared folder. The folder picker then lists only
+shares the account can actually read; Attach and Detach never delete book files.
 
-See the [native Synology package status](docs/synology-package.md) for the validated
-behavior and remaining publication work.
+See the [native Synology package guide](docs/synology-package.md) for installation,
+permissions and the remaining physical release gate.
 
 ## Library refresh
 
@@ -187,7 +186,7 @@ docker compose up -d
 Removing or recreating the container does not remove your account or catalog when the
 same config folder remains mounted.
 
-Removing a Library Root is different: it purges that root's BiblioFuse catalog,
+Detaching a library is different: it purges that root's BiblioFuse catalog,
 annotations and reading progress while leaving the read-only library files intact.
 
 ## Downloads and releases
@@ -197,13 +196,13 @@ The intended public release channels are:
 - **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas`
 - **Docker and Synology Container Manager templates:** this repository
 - **Version notes and downloadable assets:** GitHub Releases
-- **Synology `.spk`:** GitHub Releases after generic shared-folder selection and a
-  second physical validation pass
+- **Synology `.spk`:** GitHub Releases after the generic release candidate completes
+  its physical upgrade and native-connection validation pass
 - **Product overview and native apps:** [bibliofuse.com](https://bibliofuse.com)
 
-The Docker image is a public beta. The native x86-64 `.spk` has passed a private
-machine-specific test but is not yet a public download. Generic shared-folder selection
-and native iOS/visionOS connection over local Wi-Fi and Tailscale remain pending.
+The Docker image is a public beta. The native x86-64 `.spk` is a generic release
+candidate but is not yet a public download. Physical upgrade validation and native
+iOS/visionOS connection over local Wi-Fi and Tailscale remain pending.
 
 ## Help
 

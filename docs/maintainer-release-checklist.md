@@ -26,6 +26,10 @@ Docker `0.1.2` was anonymously pulled and verified on 2026-07-19. The published
 multi-platform image digest reported by Docker is
 `sha256:994682d50c3ddfc33e2b515557f265a93b347d606b876043be9bcb792c4f8f57`.
 
+Docker `0.1.3` was anonymously pulled and runtime-verified on 2026-07-19. The published
+multi-platform image digest reported by Docker is
+`sha256:9db0f641664c62e5bc44c80c879a8437b545a7adc2a6d16a2d617f7dc21c035f`.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
@@ -47,16 +51,16 @@ multi-platform image digest reported by Docker is
 - [x] Create release notes with compatibility and known limitations.
 - [ ] Link versioned Compose files.
 - [ ] Publish checksums for downloadable assets.
-- [ ] Add a generic `.spk` and checksum only after install-time share selection and
-      physical Synology validation.
+- [ ] Add the generic `.spk` and checksum only after DSM ACL attach/detach, upgrade,
+      Bonjour and Tailscale physical validation.
 - [ ] Keep older releases available for rollback, with database compatibility warnings.
 
 ## Website
 
 - [ ] State that Docker hosting and the web UI are free.
 - [ ] State that Docker-to-released-iOS/visionOS is not currently supported.
-- [x] Document the private x86-64 validation and why its machine-specific artifact is
-      not publicly downloadable.
+- [x] Document the generic x86-64 package's read-only DSM access flow and remaining
+      physical validation gate.
 - [ ] Keep Premium wording attached to native-client streaming, not Docker web use.
 - [ ] Set honest NAS performance expectations and recommend Mac/PC hosting for the
       smoothest reading experience.
