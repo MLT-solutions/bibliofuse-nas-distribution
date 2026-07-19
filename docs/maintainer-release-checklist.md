@@ -20,7 +20,7 @@ This is a publication checklist, not an end-user install guide.
 - [x] Set the GHCR package visibility to public.
 - [x] Verify an anonymous pull with an empty Docker credential store.
 - [x] Inspect the final image and confirm it contains only required runtime artifacts.
-- [ ] Record the image digest in the GitHub Release.
+- [x] Record the image digest in the GitHub Release.
 
 Docker `0.1.2` was anonymously pulled and verified on 2026-07-19. The published
 multi-platform image digest reported by Docker is
@@ -44,7 +44,7 @@ multi-platform image digest reported by Docker is
 
 ## GitHub Release
 
-- [ ] Create release notes with compatibility and known limitations.
+- [x] Create release notes with compatibility and known limitations.
 - [ ] Link versioned Compose files.
 - [ ] Publish checksums for downloadable assets.
 - [ ] Add a generic `.spk` and checksum only after install-time share selection and
