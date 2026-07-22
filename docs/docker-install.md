@@ -41,6 +41,9 @@ Open `http://<server-ip>:7343`. Create the administrator, then choose **Attach l
 in Settings. The picker shows the configured **Library** mount and its subfolders, but a
 fresh installation has no attached root until you select one and choose Refresh.
 
+Do not run this host-network Docker service beside the native Synology package on the
+same NAS: both bind native HTTPS `7342` and browser UI `7343`.
+
 The first refresh walks the complete library. Later refreshes still check the folder
 tree, but unchanged archive metadata is reused.
 

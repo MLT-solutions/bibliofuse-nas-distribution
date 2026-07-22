@@ -119,6 +119,10 @@ progress without deleting books or folders.
 
 See the [Synology tutorial](docs/synology-container-manager.md) for a complete walkthrough.
 
+Do not run the Docker project and the native Synology package on the same NAS at the
+same time. Both intentionally use ports `7342` and `7343` for the same Local Wi-Fi
+service; choose one host method per NAS.
+
 ## Native Synology package status
 
 The generic x86-64 package runs as the restricted `BiblioFuseNAS` DSM account and does

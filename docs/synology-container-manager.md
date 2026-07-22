@@ -97,3 +97,6 @@ and permissions, then restart. Never include the library folder in this cleanup.
 Container Manager and the native `.spk` pair with released iOS/visionOS apps on Local
 Wi-Fi through Bonjour. Native streaming remains subject to the native app's Premium
 feature boundary; Docker does not provide a manual/Tailscale native route.
+
+Do not run this Container Manager project beside the native BiblioFuse Synology package
+on the same NAS. Both services bind `7342` and `7343`; choose one installation method.
