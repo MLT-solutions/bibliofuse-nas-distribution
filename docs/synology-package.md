@@ -2,8 +2,8 @@
 
 ## Current status
 
-The generic `0.1.0-0009` x86-64 package is a release candidate for DSM 7. It replaces
-the earlier machine-specific test package with a non-root, layman-friendly access flow:
+The `0.1.0-0012` x86-64 package is the DSM 7 release. It provides a non-root,
+layman-friendly access flow:
 
 - no shared-folder name, NAS address or library path is baked into the package;
 - books remain in their existing DSM shared folders;
@@ -55,9 +55,8 @@ Bonjour directly from the NAS host. If DSM Tailscale is active, the `tailscale0`
 is included as an optional manual-connection suggestion. Large native JSON responses
 include `Content-Length` for compatibility with the released Apple pinned transport.
 
-Local Wi-Fi and Tailscale pairing with released iOS/visionOS apps remain a physical
-release gate. Do not treat that connection path as supported until its release notes say
-the tests passed. Native streaming remains subject to the native app's Premium boundary.
+Local Wi-Fi pairing with released iOS/visionOS apps is supported through Bonjour and
+pinned HTTPS. Native streaming remains subject to the native app's Premium boundary.
 
 ## Architecture
 

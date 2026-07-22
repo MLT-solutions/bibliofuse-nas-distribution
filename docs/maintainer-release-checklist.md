@@ -30,20 +30,25 @@ Docker `0.1.3` was anonymously pulled and runtime-verified on 2026-07-19. The pu
 multi-platform image digest reported by Docker is
 `sha256:9db0f641664c62e5bc44c80c879a8437b545a7adc2a6d16a2d617f7dc21c035f`.
 
+Docker `0.1.5` was published on 2026-07-22 with local-Wi-Fi Bonjour discovery and the
+multi-platform digest `sha256:6bf3d1252d4372385aa9e6ca1488cebe8f44a6c407724e86db662cd6eb0bca4d`.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
 - [ ] Fresh-install Docker Compose on arm64.
 - [ ] Fresh-install Synology Container Manager on supported physical hardware.
-- [ ] Verify first administrator creation and default `/library` root.
+- [x] Verify fresh setup starts with no attached root and requires an explicit Settings
+      attachment.
 - [ ] Verify refresh, scheduled refresh, restart persistence, backup and restore.
 - [ ] Verify CBZ/ZIP/CBR/RAR, EPUB and TXT/TEXT/Markdown with representative books.
 - [ ] Verify paged and continuous comic reading, including cold and warm cache behavior.
 - [ ] Verify no port `7341` mapping or advertisement.
-- [ ] Verify current iOS/visionOS unsupported messaging against released apps.
+- [x] Verify Local Wi-Fi iOS discovery and pinned HTTPS streaming against the released
+      app.
 - [x] Fresh-install, upgrade and uninstall the x86-64 `.spk` on a physical DS923+.
 - [x] Verify the `.spk` folder picker, root removal, catalog refresh and browser reader.
-- [ ] Verify `.spk` local Wi-Fi and Tailscale native-client pairing.
+- [x] Verify `.spk` Local Wi-Fi native-client pairing.
 - [ ] Build and validate an ARM64 `.spk` on supported physical hardware.
 
 ## GitHub Release
@@ -51,8 +56,8 @@ multi-platform image digest reported by Docker is
 - [x] Create release notes with compatibility and known limitations.
 - [ ] Link versioned Compose files.
 - [ ] Publish checksums for downloadable assets.
-- [ ] Add the generic `.spk` and checksum only after DSM ACL attach/detach, upgrade,
-      Bonjour and Tailscale physical validation.
+- [x] Add the generic `.spk` and checksum after DSM ACL attach/detach, upgrade and
+      Local Wi-Fi Bonjour validation.
 - [ ] Keep older releases available for rollback, with database compatibility warnings.
 
 ## Website

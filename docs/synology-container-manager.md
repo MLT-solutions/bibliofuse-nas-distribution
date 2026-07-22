@@ -19,8 +19,8 @@ docker/bibliofuse/config
 docker/bibliofuse/cache
 ```
 
-Select the existing shared folder containing books. The library will be mounted
-read-only.
+The project mounts DSM `/volume1` read-only. Settings will list the actual shared
+folders the configured DSM account can read; it does not auto-attach any of them.
 
 ## 2. Select the container user
 
@@ -42,7 +42,6 @@ The defaults `1026:100` are examples only and may not match your NAS.
 5. Set:
    - `CONFIG_PATH`, for example `/volume1/docker/bibliofuse/config`
    - `CACHE_PATH`, for example `/volume1/docker/bibliofuse/cache`
-   - `LIBRARY_PATH`, for example `/volume1/books`
    - `PUID` and `PGID`
    - `BF_TIME_ZONE`, for example `Asia/Kuala_Lumpur`
 6. Build/start the project.
@@ -55,15 +54,14 @@ Open:
 http://<nas-ip>:7343
 ```
 
-Create an administrator password of at least 12 characters. The default **Library**
-root already uses `LIBRARY_PATH`. Confirm or change it with the folder picker in
-Settings, then choose Refresh. No DSM or container path needs to be typed.
+Create an administrator password of at least 12 characters. In Settings, choose
+**Attach library**, select a displayed DSM shared folder or book subfolder, then choose
+Refresh. No DSM or container path needs to be typed. The picker filters out unreadable
+shares using the selected container UID/GID.
 
-You only add another root after mounting another NAS folder at a distinct container
-path and declaring that mount in `BF_LIBRARY_BROWSE_ROOTS`. Roots can be changed,
-disabled, or removed. Disable retains catalog data. Remove purges that root's
-BiblioFuse catalog, metadata and reading progress without deleting files or folders;
-removing the last root leaves a valid empty library.
+Roots can be changed, disabled, or removed. Disable retains catalog data. Remove purges
+that root's BiblioFuse catalog, metadata and reading progress without deleting files or
+folders; removing the last root leaves a valid empty library.
 
 ## 5. Reading and refresh
 
@@ -93,10 +91,9 @@ and permissions, then restart. Never include the library folder in this cleanup.
 ## 7. Network boundary
 
 - `7343`: free browser UI on a trusted LAN
-- `7342`: native-client server API, reserved for supported future connection flows
+- `7342`: pinned native-client HTTPS API, discovered on Local Wi-Fi through Bonjour
 - `7341`: do not publish
 
-Container Manager installation does not currently pair with the released iOS or
-visionOS apps. The native `.spk` has a native streaming listener, but local Wi-Fi and
-Tailscale pairing remain pending physical validation; native streaming remains subject
-to the native app's Premium feature boundary.
+Container Manager and the native `.spk` pair with released iOS/visionOS apps on Local
+Wi-Fi through Bonjour. Native streaming remains subject to the native app's Premium
+feature boundary; Docker does not provide a manual/Tailscale native route.

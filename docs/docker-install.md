@@ -11,7 +11,8 @@ BiblioFuse uses three host folders:
 | Your book library | `/library` | Read-only | Back up separately |
 
 The container paths stay the same. `CONFIG_PATH`, `CACHE_PATH` and `LIBRARY_PATH`
-select the real folders on the host.
+select the real folders on the host. Docker cannot locate a library path on its own: map
+the folder before first launch, then choose the folder to attach in Settings.
 
 ## 2. Configure Compose
 
@@ -36,8 +37,9 @@ docker compose ps
 docker compose logs --tail=100 bibliofuse
 ```
 
-Open `http://<server-ip>:7343`. Create the administrator, confirm or change the
-automatically created **Library** root with the folder picker, and choose Refresh.
+Open `http://<server-ip>:7343`. Create the administrator, then choose **Attach library**
+in Settings. The picker shows the configured **Library** mount and its subfolders, but a
+fresh installation has no attached root until you select one and choose Refresh.
 
 The first refresh walks the complete library. Later refreshes still check the folder
 tree, but unchanged archive metadata is reused.
@@ -113,12 +115,12 @@ released iOS or visionOS apps.
 
 ## Troubleshooting
 
-### The library is empty
+### The library picker is empty
 
-- Confirm `LIBRARY_PATH` is the real host folder.
+- Confirm `LIBRARY_PATH` is the real host folder and is set before `docker compose up`.
 - Run `docker compose config` and check the `/library:ro` mount.
 - Confirm `PUID:PGID` can read the host folder.
-- Open Settings and run Refresh.
+- Recreate the container after changing a mount, then reopen Settings.
 
 ### Permission denied
 

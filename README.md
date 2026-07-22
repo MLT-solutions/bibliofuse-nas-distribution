@@ -23,15 +23,15 @@ The BiblioFuse server source code is maintained separately and is not included h
 
 | Host or client | Availability | Reading and connection support |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Public beta `0.1.3` | Free server and free browser UI |
+| Docker / Synology Container Manager | Public beta `0.1.5` | Free server, browser UI and Local Wi-Fi native streaming |
 | BiblioFuse web reader | Included | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT and Markdown |
-| Released iOS / visionOS apps with Docker | Not supported yet | There is no supported Docker-to-native-app connection flow in the released apps |
-| Synology Package Center app (`.spk`) | Generic x86-64 release candidate | Non-root package with guided read-only access to existing DSM shared folders |
-| iOS / visionOS native streaming from the Synology app | Validation pending | Local Wi-Fi and Tailscale pairing tests remain before this is declared supported |
+| Released iOS / visionOS apps with Docker | Supported on Local Wi-Fi | Bonjour discovery and pinned HTTPS streaming; Premium is enforced by the native app |
+| Synology Package Center app (`.spk`) | Public x86-64 release | Non-root package with guided read-only access to existing DSM shared folders |
+| iOS / visionOS native streaming from the Synology app | Supported on Local Wi-Fi | Bonjour discovery and pinned HTTPS streaming; Premium is enforced by the native app |
 | BiblioFuse Mac / PC host | Separate product | Recommended when the smoothest native streaming performance is the priority |
 
-Do not buy BiblioFuse Premium solely for Docker-to-iOS or Docker-to-visionOS
-streaming today. That connection path is not currently supported.
+Docker and the browser reader remain free. Native streaming is a Premium feature of the
+iOS/visionOS app and works on the same local Wi-Fi network.
 
 ## Performance expectations
 
@@ -78,7 +78,8 @@ Your paths can be different. BiblioFuse never needs write access to the book fol
 1. Download `docker/compose.yaml` and `docker/.env.example` from this repository.
 2. Copy `.env.example` to `.env`.
 3. Edit `.env` and set `CONFIG_PATH`, `CACHE_PATH`, `LIBRARY_PATH`, `PUID`, `PGID`,
-   and `BF_TIME_ZONE`.
+   and `BF_TIME_ZONE`. `LIBRARY_PATH` is your own host folder; BiblioFuse never assumes
+   a personal folder name or path.
 4. Start BiblioFuse:
 
 ```sh
@@ -87,14 +88,13 @@ docker compose up -d
 
 5. Open `http://<server-ip>:7343`.
 6. Create the first administrator account.
-7. Open Settings, use the folder picker to confirm or change the default **Library**
-   root, and select **Refresh**.
+7. Open Settings → **Attach library**, choose the displayed **Library** location or a
+   subfolder, then select **Refresh**.
 
-The Compose file mounts your real book folder at `/library`. BiblioFuse automatically
-creates the first Library Root for `/library`; you do not need to add it manually.
-Settings displays the friendly name **Library**, not the internal container path. Use
-**Attach library** only when you have mounted additional book folders into the container and
-declared them in `BF_LIBRARY_BROWSE_ROOTS`.
+The Compose file makes your selected `LIBRARY_PATH` available as the friendly **Library**
+location. A fresh installation attaches no folders automatically: selecting a folder in
+Settings controls what BiblioFuse indexes. The container cannot find a host folder that
+was not mounted in Compose.
 
 See the [Docker installation guide](docs/docker-install.md) for updates, backups,
 permissions, remote access and troubleshooting.
@@ -108,8 +108,10 @@ to absolute Synology paths, then start the project and open:
 http://<nas-ip>:7343
 ```
 
-The book folder is mounted read-only. The config and cache folders must be writable by
-the numeric `PUID` and `PGID` selected for the container.
+The Synology project mounts DSM `/volume1` read-only and automatically lists the actual
+shared folders the selected `PUID`/`PGID` can read. It does not attach any folder until
+the administrator chooses one in Settings. Config and cache folders must be writable by
+that numeric user/group.
 
 Library folders can be changed, disabled, or detached in Settings. Detaching one,
 including the last one, clears that root's BiblioFuse catalog, metadata and reading
@@ -124,8 +126,8 @@ not create, move or assume a library folder. A Settings guide shows how to grant
 account read-only access to an existing shared folder. The folder picker then lists only
 shares the account can actually read; Attach and Detach never delete book files.
 
-See the [native Synology package guide](docs/synology-package.md) for installation,
-permissions and the remaining physical release gate.
+See the [native Synology package guide](docs/synology-package.md) for installation and
+permissions.
 
 ## Library refresh
 
@@ -159,8 +161,8 @@ password manager.
 - Port `7343` is the browser UI. Keep it on a trusted LAN or put it behind a trusted
   HTTPS reverse proxy.
 - Do not expose `7343` directly with router port forwarding.
-- Port `7342` is reserved for the server's native-client HTTPS API. Publishing it does
-  not make the current released iOS or visionOS app support Docker pairing.
+- Port `7342` is the server's pinned native-client HTTPS API. On Local Wi-Fi, iOS and
+  visionOS discover it through Bonjour.
 - Port `7341` is reserved and must never be published.
 
 There is no email-based password recovery. For Docker, recreating only the container
@@ -193,16 +195,15 @@ annotations and reading progress while leaving the read-only library files intac
 
 The intended public release channels are:
 
-- **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas`
+- **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.5`
 - **Docker and Synology Container Manager templates:** this repository
 - **Version notes and downloadable assets:** GitHub Releases
-- **Synology `.spk`:** GitHub Releases after the generic release candidate completes
-  its physical upgrade and native-connection validation pass
+- **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)
 - **Product overview and native apps:** [bibliofuse.com](https://bibliofuse.com)
 
-The Docker image is a public beta. The native x86-64 `.spk` is a generic release
-candidate but is not yet a public download. Physical upgrade validation and native
-iOS/visionOS connection over local Wi-Fi and Tailscale remain pending.
+The Docker image is a public beta. The native x86-64 `.spk` is available for DSM 7.
+Both use Local Wi-Fi Bonjour discovery for native streaming; no Docker Tailscale/manual
+native route is provided.
 
 ## Help
 
