@@ -65,7 +65,7 @@ Compose는 선택한 `LIBRARY_PATH`만 친숙한 **Library**로 제공합니다.
 http://<nas-ip>:7343
 ```
 
-이 프로젝트는 DSM `/volume1`을 읽기 전용으로 마운트하며 선택한 `PUID`/`PGID`가 실제로 읽을 수 있는 공유 폴더만 표시합니다. 관리자가 설정에서 선택하기 전에는 폴더가 연결되지 않습니다. config와 cache는 쓰기 가능해야 합니다. 설정에서 라이브러리를 변경, 비활성화, 분리할 수 있습니다. 분리는 해당 루트의 카탈로그, 메타데이터, 읽기 진행을 지우지만 책은 삭제하지 않습니다. [Synology 튜토리얼](docs/synology-container-manager.md)을 참조하세요. 같은 NAS에서 Docker 프로젝트와 네이티브 패키지를 동시에 실행하지 마세요. 둘 다 `7342` 및 `7343`을 사용합니다.
+이 프로젝트는 DSM `/volume1`을 읽기 전용으로 마운트하며 선택한 `PUID`/`PGID`가 실제로 읽을 수 있는 공유 폴더만 표시합니다. 관리자가 설정에서 선택하기 전에는 폴더가 연결되지 않습니다. config와 cache는 쓰기 가능해야 합니다. 설정에서 라이브러리를 변경, 비활성화, 분리할 수 있습니다. 분리는 해당 루트의 카탈로그, 메타데이터, 읽기 진행을 지우지만 책은 삭제하지 않습니다. [Synology 튜토리얼](docs/synology-container-manager.ko.md)을 참조하세요. 같은 NAS에서 Docker 프로젝트와 네이티브 패키지를 동시에 실행하지 마세요. 둘 다 `7342` 및 `7343`을 사용합니다.
 
 ## 네이티브 Synology 패키지
 
@@ -96,4 +96,4 @@ Docker 이미지는 공개 베타입니다. 두 호스트 방식은 로컬 Wi-Fi
 
 ## 도움말
 
-[Docker 설치 및 운영](docs/docker-install.ko.md), [Synology Container Manager 튜토리얼](docs/synology-container-manager.md), [네이티브 Synology 패키지](docs/synology-package.ko.md), [성능 가이드](docs/performance.md), [릴리스 채널 및 네이티브 앱](docs/releases-and-native-apps.md)부터 확인하세요. 지원 요청에는 NAS/호스트 모델, CPU 아키텍처, Docker 버전, 책 형식, 최근 컨테이너 로그를 포함하고 비밀번호, 개인 키, 민감한 파일명, config 내용은 게시하지 마세요.
+[Docker 설치 및 운영](docs/docker-install.ko.md), [Synology Container Manager 튜토리얼](docs/synology-container-manager.ko.md), [네이티브 Synology 패키지](docs/synology-package.ko.md), [성능 가이드](docs/performance.md), [릴리스 채널 및 네이티브 앱](docs/releases-and-native-apps.md)부터 확인하세요. 지원 요청에는 NAS/호스트 모델, CPU 아키텍처, Docker 버전, 책 형식, 최근 컨테이너 로그를 포함하고 비밀번호, 개인 키, 민감한 파일명, config 내용은 게시하지 마세요.

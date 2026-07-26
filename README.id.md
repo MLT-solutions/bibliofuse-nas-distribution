@@ -65,7 +65,7 @@ Gunakan `synology/compose.yaml` sebagai proyek Container Manager, atur variabel 
 http://<nas-ip>:7343
 ```
 
-Proyek memasang DSM `/volume1` sebagai baca-saja dan hanya menampilkan share yang benar-benar dapat dibaca `PUID`/`PGID` terpilih. Tidak ada folder yang dilampirkan sebelum administrator memilihnya di Settings; config dan cache harus dapat ditulis. Pustaka dapat diubah, dinonaktifkan, atau dilepas; pelepasan menghapus katalog, metadata, dan progres akar itu tanpa menghapus buku. Lihat [tutorial Synology](docs/synology-container-manager.md). Jangan jalankan proyek Docker dan paket Synology native bersamaan pada NAS yang sama karena keduanya memakai `7342` dan `7343`.
+Proyek memasang DSM `/volume1` sebagai baca-saja dan hanya menampilkan share yang benar-benar dapat dibaca `PUID`/`PGID` terpilih. Tidak ada folder yang dilampirkan sebelum administrator memilihnya di Settings; config dan cache harus dapat ditulis. Pustaka dapat diubah, dinonaktifkan, atau dilepas; pelepasan menghapus katalog, metadata, dan progres akar itu tanpa menghapus buku. Lihat [tutorial Synology](docs/synology-container-manager.id.md). Jangan jalankan proyek Docker dan paket Synology native bersamaan pada NAS yang sama karena keduanya memakai `7342` dan `7343`.
 
 ## Paket Synology native
 
@@ -96,4 +96,4 @@ Image Docker adalah beta publik. Kedua metode host mendukung penemuan native Bon
 
 ## Bantuan
 
-Mulai dari [instalasi dan operasi Docker](docs/docker-install.id.md), [tutorial Synology Container Manager](docs/synology-container-manager.md), [paket Synology native](docs/synology-package.id.md), [panduan performa](docs/performance.md), dan [kanal rilis serta aplikasi native](docs/releases-and-native-apps.md). Saat meminta bantuan, sertakan model NAS/host, arsitektur CPU, versi Docker, format buku, dan log kontainer terbaru; jangan publikasikan kata sandi, kunci privat, nama berkas sensitif, atau isi config.
+Mulai dari [instalasi dan operasi Docker](docs/docker-install.id.md), [tutorial Synology Container Manager](docs/synology-container-manager.id.md), [paket Synology native](docs/synology-package.id.md), [panduan performa](docs/performance.md), dan [kanal rilis serta aplikasi native](docs/releases-and-native-apps.md). Saat meminta bantuan, sertakan model NAS/host, arsitektur CPU, versi Docker, format buku, dan log kontainer terbaru; jangan publikasikan kata sandi, kunci privat, nama berkas sensitif, atau isi config.

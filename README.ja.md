@@ -65,7 +65,7 @@ Compose は選択した `LIBRARY_PATH` を **Library** として公開するだ�
 http://<nas-ip>:7343
 ```
 
-このプロジェクトは DSM `/volume1` を読み取り専用でマウントし、選択した `PUID`/`PGID` が実際に読める共有フォルダだけを一覧にします。管理者が設定で選ぶまでフォルダは接続されません。config と cache は書き込み可能である必要があります。ライブラリは設定で変更、無効化、切り離しできます。切り離しはそのルートのカタログ、メタデータ、読書位置を消去しますが、書籍は削除しません。完全な手順は [Synology チュートリアル](docs/synology-container-manager.md) を参照してください。同一 NAS で Docker プロジェクトとネイティブパッケージを同時に実行しないでください。両者は `7342` と `7343` を使用します。
+このプロジェクトは DSM `/volume1` を読み取り専用でマウントし、選択した `PUID`/`PGID` が実際に読める共有フォルダだけを一覧にします。管理者が設定で選ぶまでフォルダは接続されません。config と cache は書き込み可能である必要があります。ライブラリは設定で変更、無効化、切り離しできます。切り離しはそのルートのカタログ、メタデータ、読書位置を消去しますが、書籍は削除しません。完全な手順は [Synology チュートリアル](docs/synology-container-manager.ja.md) を参照してください。同一 NAS で Docker プロジェクトとネイティブパッケージを同時に実行しないでください。両者は `7342` と `7343` を使用します。
 
 ## ネイティブ Synology パッケージ
 
@@ -96,4 +96,4 @@ Docker イメージは公開ベータです。両方式はローカル Wi-Fi Bon
 
 ## ヘルプ
 
-[Docker のインストールと運用](docs/docker-install.ja.md)、[Synology Container Manager チュートリアル](docs/synology-container-manager.md)、[ネイティブ Synology パッケージ](docs/synology-package.ja.md)、[パフォーマンスガイド](docs/performance.md)、[リリースチャンネルとネイティブアプリ](docs/releases-and-native-apps.md) から始めてください。サポート依頼では NAS/ホストモデル、CPU アーキテクチャ、Docker バージョン、書籍形式、最近のコンテナログを含め、パスワード、秘密鍵、機密のファイル名、config 内容は公開しないでください。
+[Docker のインストールと運用](docs/docker-install.ja.md)、[Synology Container Manager チュートリアル](docs/synology-container-manager.ja.md)、[ネイティブ Synology パッケージ](docs/synology-package.ja.md)、[パフォーマンスガイド](docs/performance.md)、[リリースチャンネルとネイティブアプリ](docs/releases-and-native-apps.md) から始めてください。サポート依頼では NAS/ホストモデル、CPU アーキテクチャ、Docker バージョン、書籍形式、最近のコンテナログを含め、パスワード、秘密鍵、機密のファイル名、config 内容は公開しないでください。

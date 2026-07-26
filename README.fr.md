@@ -98,7 +98,7 @@ Le projet Synology monte DSM `/volume1` en lecture seule et liste automatiquemen
 
 Les dossiers de bibliothèque peuvent être modifiés, désactivés ou détachés dans Réglages. Détacher un dossier, même le dernier, efface le catalogue BiblioFuse de cette racine, ses métadonnées et sa progression de lecture sans supprimer les livres ou dossiers.
 
-Consultez le [tutoriel Synology](docs/synology-container-manager.md) pour une procédure complète.
+Consultez le [tutoriel Synology](docs/synology-container-manager.fr.md) pour une procédure complète.
 
 N'exécutez pas le projet Docker et le paquet Synology natif sur le même NAS en même temps. Les deux utilisent intentionnellement les ports `7342` et `7343` pour le même service Wi-Fi local ; choisissez une seule méthode d'hébergement par NAS.
 
@@ -172,7 +172,7 @@ L'image Docker est une bêta publique. Le `.spk` x86-64 natif est disponible pou
 Commencez par :
 
 - [Installation et opérations Docker](docs/docker-install.fr.md)
-- [Tutoriel Synology Container Manager](docs/synology-container-manager.md)
+- [Tutoriel Synology Container Manager](docs/synology-container-manager.fr.md)
 - [État du paquet Synology natif](docs/synology-package.fr.md)
 - [Guide des performances](docs/performance.md)
 - [Canaux de publication et limites des apps natives](docs/releases-and-native-apps.md)

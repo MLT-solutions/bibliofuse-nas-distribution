@@ -84,7 +84,7 @@ http://<nas-ip>:7343
 
 Папки библиотеки можно изменить, отключить или отсоединить в Настройках. Отсоединение, даже последней папки, очищает каталог, метаданные и прогресс чтения этой корневой библиотеки BiblioFuse, но не удаляет книги и папки.
 
-См. [руководство Synology](docs/synology-container-manager.md). Не запускайте Docker-проект и нативный пакет Synology на одном NAS одновременно: оба намеренно используют порты `7342` и `7343`; выберите один способ хостинга на NAS.
+См. [руководство Synology](docs/synology-container-manager.ru.md). Не запускайте Docker-проект и нативный пакет Synology на одном NAS одновременно: оба намеренно используют порты `7342` и `7343`; выберите один способ хостинга на NAS.
 
 ## Нативный пакет Synology
 
@@ -121,4 +121,4 @@ docker compose up -d
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)
 - **Продукт и нативные приложения:** [bibliofuse.com](https://bibliofuse.com)
 
-Начните с [установки и работы Docker](docs/docker-install.ru.md), [руководства Synology Container Manager](docs/synology-container-manager.md), [нативного пакета Synology](docs/synology-package.ru.md), [руководства по производительности](docs/performance.md) и [каналов выпуска](docs/releases-and-native-apps.md). В обращении за помощью укажите модель NAS/хоста, архитектуру CPU, версию Docker, формат книги и последние журналы; никогда не публикуйте пароли, закрытые ключи, чувствительные имена файлов или содержимое папки конфигурации.
+Начните с [установки и работы Docker](docs/docker-install.ru.md), [руководства Synology Container Manager](docs/synology-container-manager.ru.md), [нативного пакета Synology](docs/synology-package.ru.md), [руководства по производительности](docs/performance.md) и [каналов выпуска](docs/releases-and-native-apps.md). В обращении за помощью укажите модель NAS/хоста, архитектуру CPU, версию Docker, формат книги и последние журналы; никогда не публикуйте пароли, закрытые ключи, чувствительные имена файлов или содержимое папки конфигурации.

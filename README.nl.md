@@ -92,7 +92,7 @@ Het Synology-project koppelt DSM `/volume1` alleen-lezen en toont automatisch de
 
 Bibliotheekmappen kunnen in Instellingen worden gewijzigd, uitgeschakeld of losgekoppeld. Loskoppelen, ook van de laatste map, wist BiblioFuse-catalogus, metadata en leesvoortgang van die root zonder boeken of mappen te verwijderen.
 
-Zie de [Synology-handleiding](docs/synology-container-manager.md) voor de volledige uitleg.
+Zie de [Synology-handleiding](docs/synology-container-manager.nl.md) voor de volledige uitleg.
 
 Gebruik het Docker-project en het native Synology-pakket niet tegelijk op dezelfde NAS. Beide gebruiken bewust poorten `7342` en `7343` voor dezelfde lokale Wi-Fi-service; kies één hostmethode per NAS.
 
@@ -159,7 +159,7 @@ De Docker-image is een publieke bèta. De native x86-64 `.spk` is beschikbaar vo
 Begin met:
 
 - [Docker-installatie en gebruik](docs/docker-install.nl.md)
-- [Synology Container Manager-handleiding](docs/synology-container-manager.md)
+- [Synology Container Manager-handleiding](docs/synology-container-manager.nl.md)
 - [Status native Synology-pakket](docs/synology-package.nl.md)
 - [Prestatiegids](docs/performance.md)
 - [Releasekanalen en native-appgrens](docs/releases-and-native-apps.md)

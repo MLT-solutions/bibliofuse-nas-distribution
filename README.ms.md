@@ -65,7 +65,7 @@ Gunakan `synology/compose.yaml` sebagai projek Container Manager, tetapkan pembo
 http://<nas-ip>:7343
 ```
 
-Projek ini memasang DSM `/volume1` sebagai baca sahaja dan hanya menyenaraikan perkongsian yang benar-benar boleh dibaca `PUID`/`PGID` terpilih. Tiada folder dilampirkan sehingga pentadbir memilihnya dalam Settings; config dan cache mesti boleh ditulis. Pustaka boleh diubah, dilumpuhkan atau ditanggalkan; penanggalan mengosongkan katalog, metadata dan kemajuan akar itu tanpa memadam buku. Lihat [tutorial Synology](docs/synology-container-manager.md). Jangan jalankan projek Docker dan pakej Synology asli pada NAS yang sama kerana kedua-duanya menggunakan `7342` dan `7343`.
+Projek ini memasang DSM `/volume1` sebagai baca sahaja dan hanya menyenaraikan perkongsian yang benar-benar boleh dibaca `PUID`/`PGID` terpilih. Tiada folder dilampirkan sehingga pentadbir memilihnya dalam Settings; config dan cache mesti boleh ditulis. Pustaka boleh diubah, dilumpuhkan atau ditanggalkan; penanggalan mengosongkan katalog, metadata dan kemajuan akar itu tanpa memadam buku. Lihat [tutorial Synology](docs/synology-container-manager.ms.md). Jangan jalankan projek Docker dan pakej Synology asli pada NAS yang sama kerana kedua-duanya menggunakan `7342` dan `7343`.
 
 ## Pakej Synology asli
 
@@ -96,4 +96,4 @@ Imej Docker ialah beta awam. Kedua-dua kaedah hos menyokong penemuan asli Bonjou
 
 ## Bantuan
 
-Mulakan dengan [pemasangan dan operasi Docker](docs/docker-install.ms.md), [tutorial Synology Container Manager](docs/synology-container-manager.md), [pakej Synology asli](docs/synology-package.ms.md), [panduan prestasi](docs/performance.md), dan [saluran keluaran serta aplikasi asli](docs/releases-and-native-apps.md). Untuk bantuan, sertakan model NAS/hos, seni bina CPU, versi Docker, format buku dan log kontena terkini; jangan siarkan kata laluan, kunci peribadi, nama fail sensitif atau kandungan config.
+Mulakan dengan [pemasangan dan operasi Docker](docs/docker-install.ms.md), [tutorial Synology Container Manager](docs/synology-container-manager.ms.md), [pakej Synology asli](docs/synology-package.ms.md), [panduan prestasi](docs/performance.md), dan [saluran keluaran serta aplikasi asli](docs/releases-and-native-apps.md). Untuk bantuan, sertakan model NAS/hos, seni bina CPU, versi Docker, format buku dan log kontena terkini; jangan siarkan kata laluan, kunci peribadi, nama fail sensitif atau kandungan config.

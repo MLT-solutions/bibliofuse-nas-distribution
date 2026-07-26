@@ -65,7 +65,7 @@ Compose 仅将指定的 `LIBRARY_PATH` 提供为 **Library**；新安装不会�
 http://<nas-ip>:7343
 ```
 
-该项目以只读方式挂载 DSM `/volume1`，只列出所选 `PUID`/`PGID` 实际可读的共享文件夹；管理员在设置中选择前不会附加任何文件夹。配置和缓存必须可写。可在设置中更改、禁用或移除书库；移除会清除该根的目录、元数据和阅读进度，但不会删除书籍。完整步骤见 [Synology 教程](docs/synology-container-manager.md)。同一 NAS 不要同时运行 Docker 项目和原生套件：两者均使用 `7342` 与 `7343`。
+该项目以只读方式挂载 DSM `/volume1`，只列出所选 `PUID`/`PGID` 实际可读的共享文件夹；管理员在设置中选择前不会附加任何文件夹。配置和缓存必须可写。可在设置中更改、禁用或移除书库；移除会清除该根的目录、元数据和阅读进度，但不会删除书籍。完整步骤见 [Synology 教程](docs/synology-container-manager.zh-CN.md)。同一 NAS 不要同时运行 Docker 项目和原生套件：两者均使用 `7342` 与 `7343`。
 
 ## 原生 Synology 套件
 
@@ -96,4 +96,4 @@ Docker 镜像是公开测试版。两种主机方式均支持本地 Wi-Fi Bonjou
 
 ## 帮助
 
-请先阅读 [Docker 安装与运维](docs/docker-install.zh-CN.md)、[Synology Container Manager 教程](docs/synology-container-manager.md)、[原生 Synology 套件](docs/synology-package.zh-CN.md)、[性能指南](docs/performance.md) 和 [发行渠道与原生 App](docs/releases-and-native-apps.md)。请求支持时请提供 NAS/主机型号、CPU 架构、Docker 版本、书籍格式和近期容器日志；切勿发布密码、私钥、敏感文件名或 config 内容。
+请先阅读 [Docker 安装与运维](docs/docker-install.zh-CN.md)、[Synology Container Manager 教程](docs/synology-container-manager.zh-CN.md)、[原生 Synology 套件](docs/synology-package.zh-CN.md)、[性能指南](docs/performance.md) 和 [发行渠道与原生 App](docs/releases-and-native-apps.md)。请求支持时请提供 NAS/主机型号、CPU 架构、Docker 版本、书籍格式和近期容器日志；切勿发布密码、私钥、敏感文件名或 config 内容。

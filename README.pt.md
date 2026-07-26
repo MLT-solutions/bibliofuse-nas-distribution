@@ -92,7 +92,7 @@ O projeto Synology monta DSM `/volume1` apenas para leitura e lista automaticame
 
 As pastas de biblioteca podem ser alteradas, desativadas ou desanexadas em Definições. Desanexar, inclusive a última, limpa o catálogo, metadados e progresso de leitura BiblioFuse dessa raiz sem apagar livros ou pastas.
 
-Veja o [tutorial Synology](docs/synology-container-manager.md) para a explicação completa. Não execute o projeto Docker e o pacote Synology nativo no mesmo NAS ao mesmo tempo: ambos usam deliberadamente as portas `7342` e `7343`; escolha um método de anfitrião por NAS.
+Veja o [tutorial Synology](docs/synology-container-manager.pt.md) para a explicação completa. Não execute o projeto Docker e o pacote Synology nativo no mesmo NAS ao mesmo tempo: ambos usam deliberadamente as portas `7342` e `7343`; escolha um método de anfitrião por NAS.
 
 ## Pacote Synology nativo
 
@@ -131,4 +131,4 @@ Remover ou recriar o contentor não remove a conta ou catálogo se a mesma pasta
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)
 - **Produto e apps nativas:** [bibliofuse.com](https://bibliofuse.com)
 
-Comece por [instalação e operações Docker](docs/docker-install.pt.md), [tutorial Synology Container Manager](docs/synology-container-manager.md), [pacote Synology nativo](docs/synology-package.pt.md), [guia de desempenho](docs/performance.md) e [canais de lançamento](docs/releases-and-native-apps.md). Ao pedir ajuda, inclua modelo NAS/anfitrião, arquitetura CPU, versão Docker, formato do livro e registos recentes; nunca publique palavras-passe, chaves privadas, nomes sensíveis de ficheiros ou o conteúdo da pasta de configuração.
+Comece por [instalação e operações Docker](docs/docker-install.pt.md), [tutorial Synology Container Manager](docs/synology-container-manager.pt.md), [pacote Synology nativo](docs/synology-package.pt.md), [guia de desempenho](docs/performance.md) e [canais de lançamento](docs/releases-and-native-apps.md). Ao pedir ajuda, inclua modelo NAS/anfitrião, arquitetura CPU, versão Docker, formato do livro e registos recentes; nunca publique palavras-passe, chaves privadas, nomes sensíveis de ficheiros ou o conteúdo da pasta de configuração.

@@ -2,7 +2,7 @@
 
 [English](synology-container-manager.md) | [Español](synology-container-manager.es.md) | [Français](synology-container-manager.fr.md) | [Nederlands](synology-container-manager.nl.md) | [Português](synology-container-manager.pt.md) | [Русский](synology-container-manager.ru.md) | [简体中文](synology-container-manager.zh-CN.md) | [日本語](synology-container-manager.ja.md) | [한국어](synology-container-manager.ko.md) | [Bahasa Indonesia](synology-container-manager.id.md) | [Bahasa Melayu](synology-container-manager.ms.md)
 
-Это руководство устанавливает бесплатный сервер Docker и веб-интерфейс через Container Manager. Для отдельно протестированного нативного пакета DSM см. [руководство по пакету Synology](synology-package.md).
+Это руководство устанавливает бесплатный сервер Docker и веб-интерфейс через Container Manager. Для отдельно протестированного нативного пакета DSM см. [руководство по пакету Synology](synology-package.ru.md).
 
 ## Требования
 

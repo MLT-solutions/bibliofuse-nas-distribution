@@ -2,7 +2,7 @@
 
 [English](synology-container-manager.md) | [Español](synology-container-manager.es.md) | [Français](synology-container-manager.fr.md) | [Nederlands](synology-container-manager.nl.md) | [Português](synology-container-manager.pt.md) | [Русский](synology-container-manager.ru.md) | [简体中文](synology-container-manager.zh-CN.md) | [日本語](synology-container-manager.ja.md) | [한국어](synology-container-manager.ko.md) | [Bahasa Indonesia](synology-container-manager.id.md) | [Bahasa Melayu](synology-container-manager.ms.md)
 
-이 안내서에서는 Container Manager로 무료 Docker 서버와 웹 UI를 설치합니다. 별도로 테스트된 네이티브 DSM 패키지는 [Synology 패키지 안내서](synology-package.md)를 참조하세요.
+이 안내서에서는 Container Manager로 무료 Docker 서버와 웹 UI를 설치합니다. 별도로 테스트된 네이티브 DSM 패키지는 [Synology 패키지 안내서](synology-package.ko.md)를 참조하세요.
 
 ## 요구 사항
 

@@ -2,7 +2,7 @@
 
 [English](synology-container-manager.md) | [Español](synology-container-manager.es.md) | [Français](synology-container-manager.fr.md) | [Nederlands](synology-container-manager.nl.md) | [Português](synology-container-manager.pt.md) | [Русский](synology-container-manager.ru.md) | [简体中文](synology-container-manager.zh-CN.md) | [日本語](synology-container-manager.ja.md) | [한국어](synology-container-manager.ko.md) | [Bahasa Indonesia](synology-container-manager.id.md) | [Bahasa Melayu](synology-container-manager.ms.md)
 
-本指南通过 Container Manager 安装免费的 Docker 服务器和网页界面。如需安装经过单独测试的原生 DSM 套件，请参阅 [Synology 套件指南](synology-package.md)。
+本指南通过 Container Manager 安装免费的 Docker 服务器和网页界面。如需安装经过单独测试的原生 DSM 套件，请参阅 [Synology 套件指南](synology-package.zh-CN.md)。
 
 ## 要求
 

@@ -2,7 +2,7 @@
 
 [English](synology-container-manager.md) | [Español](synology-container-manager.es.md) | [Français](synology-container-manager.fr.md) | [Nederlands](synology-container-manager.nl.md) | [Português](synology-container-manager.pt.md) | [Русский](synology-container-manager.ru.md) | [简体中文](synology-container-manager.zh-CN.md) | [日本語](synology-container-manager.ja.md) | [한국어](synology-container-manager.ko.md) | [Bahasa Indonesia](synology-container-manager.id.md) | [Bahasa Melayu](synology-container-manager.ms.md)
 
-Deze handleiding installeert de gratis Docker-server en webinterface via Container Manager. Zie voor het afzonderlijk geteste native DSM-pakket de [Synology-pakkethandleiding](synology-package.md).
+Deze handleiding installeert de gratis Docker-server en webinterface via Container Manager. Zie voor het afzonderlijk geteste native DSM-pakket de [Synology-pakkethandleiding](synology-package.nl.md).
 
 ## Vereisten
 
