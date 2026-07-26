@@ -4,6 +4,8 @@
 
 <h1 align="center">BiblioFuse NAS</h1>
 
+[English](README.md) | [Español](README.es.md) | [Français](README.fr.md) | [Nederlands](README.nl.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Bahasa Indonesia](README.id.md) | [Bahasa Melayu](README.ms.md)
+
 <p align="center">
   A private, self-hosted ebook and comic library for Docker and Synology NAS.
   <br>
