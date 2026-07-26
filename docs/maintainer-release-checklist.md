@@ -33,6 +33,9 @@ multi-platform image digest reported by Docker is
 Docker `0.1.5` was published on 2026-07-22 with local-Wi-Fi Bonjour discovery and the
 multi-platform digest `sha256:6bf3d1252d4372385aa9e6ca1488cebe8f44a6c407724e86db662cd6eb0bca4d`.
 
+Docker `0.1.6` was published with the browser localization bundle and the multi-platform
+digest `sha256:f8bb79cc17c32ebb562343c52d040b0092c473ea227d3e5e7dc5929c043b83b6`.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
@@ -55,7 +58,7 @@ multi-platform digest `sha256:6bf3d1252d4372385aa9e6ca1488cebe8f44a6c407724e86db
 
 - [x] Create release notes with compatibility and known limitations.
 - [ ] Link versioned Compose files.
-- [ ] Publish checksums for downloadable assets.
+- [x] Publish checksums for downloadable assets.
 - [x] Add the generic `.spk` and checksum after DSM ACL attach/detach, upgrade and
       Local Wi-Fi Bonjour validation.
 - [ ] Keep older releases available for rollback, with database compatibility warnings.

@@ -2,7 +2,7 @@
 
 ## Current status
 
-The `0.1.0-0012` x86-64 package is the DSM 7 release. It provides a non-root,
+The `0.1.0-0013` x86-64 package is the DSM 7 release. It provides a non-root,
 layman-friendly access flow:
 
 - no shared-folder name, NAS address or library path is baked into the package;
@@ -13,6 +13,13 @@ layman-friendly access flow:
 
 The package is not a container. Package Center owns lifecycle, the main-menu icon and
 the restricted system-internal account.
+
+## Browser language
+
+In Settings, choose **Language** to follow the system language or select English,
+Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korean,
+Indonesian, or Malay. The selection is stored only in that browser and survives package
+upgrades.
 
 ## Install and grant access
 

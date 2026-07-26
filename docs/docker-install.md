@@ -1,5 +1,12 @@
 # Docker installation and operations
 
+## Browser language
+
+After setup, open Settings and choose **Language**. The browser can follow the system
+language or use English, Spanish, French, Dutch, Portuguese, Russian, Simplified
+Chinese, Japanese, Korean, Indonesian, or Malay. The choice is stored only in that
+browser and does not affect the container or library metadata.
+
 ## 1. Choose the folders
 
 BiblioFuse uses three host folders:
