@@ -1,5 +1,7 @@
 # Synology Container Manager tutorial
 
+[English](synology-container-manager.md) | [Español](synology-container-manager.es.md) | [Français](synology-container-manager.fr.md) | [Nederlands](synology-container-manager.nl.md) | [Português](synology-container-manager.pt.md) | [Русский](synology-container-manager.ru.md) | [简体中文](synology-container-manager.zh-CN.md) | [日本語](synology-container-manager.ja.md) | [한국어](synology-container-manager.ko.md) | [Bahasa Indonesia](synology-container-manager.id.md) | [Bahasa Melayu](synology-container-manager.ms.md)
+
 This guide installs the free Docker server and web UI through Container Manager. For
 the separately tested native DSM package, see the
 [Synology package guide](synology-package.md).
