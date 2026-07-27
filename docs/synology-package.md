@@ -4,7 +4,7 @@
 
 ## Current status
 
-The `0.1.0-0018` x86-64 package is the DSM 7 release. It provides a non-root,
+The `0.1.0-0021` x86-64 package is the DSM 7 release. It provides a non-root,
 layman-friendly access flow:
 
 - no shared-folder name, NAS address or library path is baked into the package;

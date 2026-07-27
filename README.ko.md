@@ -14,7 +14,7 @@ BiblioFuse NAS는 Docker 또는 Synology Container Manager에서 무료로 호�
 
 | 호스트 또는 클라이언트 | 제공 상태 | 읽기 및 연결 지원 |
 | --- | --- | --- |
-| Docker / Synology Container Manager | 공개 베타 `0.1.7` | 무료 서버, 브라우저 UI, 로컬 Wi-Fi 네이티브 스트리밍 |
+| Docker / Synology Container Manager | 공개 베타 `0.1.8` | 무료 서버, 브라우저 UI, 로컬 Wi-Fi 네이티브 스트리밍 |
 | BiblioFuse 웹 리더 | 포함 | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT, Markdown |
 | Docker 지원 iOS / visionOS 앱 | 로컬 Wi-Fi | Bonjour 검색과 고정 HTTPS 스트리밍, Premium은 네이티브 앱에서 적용 |
 | Synology Package Center 앱(`.spk`) | 공개 x86-64 릴리스 | non-root 패키지, 기존 DSM 공유 폴더 읽기 전용 접근 안내 |
@@ -86,7 +86,7 @@ docker compose up -d
 
 같은 config 폴더를 계속 마운트하면 컨테이너 재생성으로 계정이나 카탈로그가 삭제되지 않습니다. 라이브러리를 분리하면 해당 루트의 카탈로그, 주석, 진행이 삭제됩니다.
 
-- **Docker 이미지:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.7`
+- **Docker 이미지:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.8`
 - **Docker/Container Manager 템플릿:** 이 저장소
 - **버전 노트 및 다운로드 자산:** GitHub Releases
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)

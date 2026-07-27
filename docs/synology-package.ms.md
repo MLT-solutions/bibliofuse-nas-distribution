@@ -4,7 +4,7 @@
 
 ## Status semasa
 
-Pakej x86-64 `0.1.0-0018` ialah keluaran DSM 7. Nama folder kongsi, alamat NAS dan laluan pustaka tidak dimasukkan ke dalam pakej. Buku kekal dalam folder kongsi DSM sedia ada; BiblioFuse tidak dapat memberi akses kepada dirinya atau mengubah kebenaran DSM. Settings menerangkan pemberian akses baca sahaja kepada akaun pakej terhad; Attach dan Detach hanya mengawal pengindeksan dan tidak memadam fail pustaka. Ini bukan kontena: Package Center mengurus kitar hayat, ikon menu utama dan akaun dalaman sistem yang terhad.
+Pakej x86-64 `0.1.0-0021` ialah keluaran DSM 7. Nama folder kongsi, alamat NAS dan laluan pustaka tidak dimasukkan ke dalam pakej. Buku kekal dalam folder kongsi DSM sedia ada; BiblioFuse tidak dapat memberi akses kepada dirinya atau mengubah kebenaran DSM. Settings menerangkan pemberian akses baca sahaja kepada akaun pakej terhad; Attach dan Detach hanya mengawal pengindeksan dan tidak memadam fail pustaka. Ini bukan kontena: Package Center mengurus kitar hayat, ikon menu utama dan akaun dalaman sistem yang terhad.
 
 ## Bahasa pelayar
 

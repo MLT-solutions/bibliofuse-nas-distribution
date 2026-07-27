@@ -41,6 +41,13 @@ Docker `0.1.7` was anonymously pulled and verified on 2026-07-27 (empty
 published multi-platform image digest reported by Docker is
 `sha256:0ef6b49d2ae2534fdb72e4b064563e9a6c7291bb33313b29ce9c16c772843e5f`.
 
+Docker `0.1.8` was anonymously pulled and verified on 2026-07-27 (public GHCR package
+visibility confirmed via the API, `docker manifest inspect` succeeded with no stored
+`ghcr.io` credentials). The published multi-platform image digest reported by Docker is
+`sha256:865a24b5006528faf784e304df4029dbdebfe135044eaf3c51deb7881e926e8c`. This release
+fixes an iOS WebKit crash reproduced and diagnosed on a physical iPhone via Console.app
+system log capture — see [v0.1.8 release notes](releases/v0.1.8.md).
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.

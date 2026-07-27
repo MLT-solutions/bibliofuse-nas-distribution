@@ -4,7 +4,7 @@
 
 ## Estado atual
 
-O pacote x86-64 `0.1.0-0018` é a versão DSM 7. Fornece um fluxo de acesso simples, sem root:
+O pacote x86-64 `0.1.0-0021` é a versão DSM 7. Fornece um fluxo de acesso simples, sem root:
 
 - nenhum nome de pasta partilhada, endereço NAS ou caminho de biblioteca está incorporado;
 - os livros permanecem nas pastas partilhadas DSM existentes;
