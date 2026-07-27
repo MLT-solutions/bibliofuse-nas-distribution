@@ -4,7 +4,7 @@
 
 ## État actuel
 
-Le paquet x86-64 `0.1.0-0013` est la version DSM 7. Il fournit un flux d'accès simple sans root :
+Le paquet x86-64 `0.1.0-0018` est la version DSM 7. Il fournit un flux d'accès simple sans root :
 
 - aucun nom de dossier partagé, adresse NAS ou chemin de bibliothèque n'est intégré au paquet ;
 - les livres restent dans leurs dossiers partagés DSM existants ;

@@ -16,7 +16,7 @@ Deze openbare distributierepository bevat installatiebestanden en documentatie. 
 
 | Host of client | Beschikbaarheid | Lees- en verbindingsondersteuning |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Publieke bèta `0.1.6` | Gratis server, browserinterface en lokaal Wi-Fi native streamen |
+| Docker / Synology Container Manager | Publieke bèta `0.1.7` | Gratis server, browserinterface en lokaal Wi-Fi native streamen |
 | BiblioFuse-weblezer | Inbegrepen | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT en Markdown |
 | Uitgebrachte iOS-/visionOS-apps met Docker | Ondersteund op lokaal Wi-Fi | Bonjour-detectie en vastgezette HTTPS-streaming; Premium wordt door de native app afgedwongen |
 | Synology Package Center-app (`.spk`) | Openbare x86-64-release | Niet-rootpakket met begeleide alleen-lezen-toegang tot bestaande DSM-gedeelde mappen |
@@ -146,7 +146,7 @@ Container verwijderen of opnieuw maken verwijdert uw account of catalogus niet z
 
 De bedoelde openbare releasekanalen zijn:
 
-- **Docker-image:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.6`
+- **Docker-image:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.7`
 - **Docker- en Synology Container Manager-sjablonen:** deze repository
 - **Versienotities en downloadbare assets:** GitHub Releases
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)

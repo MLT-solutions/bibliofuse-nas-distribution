@@ -14,7 +14,7 @@ BiblioFuse NAS 可免费在 Docker 或 Synology Container Manager 中托管；�
 
 | 主机或客户端 | 可用性 | 阅读和连接支持 |
 | --- | --- | --- |
-| Docker / Synology Container Manager | 公开测试版 `0.1.6` | 免费服务器、浏览器 UI 和本地 Wi-Fi 原生串流 |
+| Docker / Synology Container Manager | 公开测试版 `0.1.7` | 免费服务器、浏览器 UI 和本地 Wi-Fi 原生串流 |
 | BiblioFuse 网页阅读器 | 已包含 | CBZ、ZIP、CBR、RAR、EPUB、TXT、TEXT 和 Markdown |
 | 已发布、可连接 Docker 的 iOS / visionOS App | 本地 Wi-Fi 支持 | Bonjour 发现和固定 HTTPS 串流；Premium 由原生 App 管理 |
 | Synology Package Center App（`.spk`） | 公开 x86-64 发行版 | 非 root 套件，可引导读取现有 DSM 共享文件夹 |
@@ -86,7 +86,7 @@ docker compose up -d
 
 同一 config 文件夹保持挂载时，重建容器不会删除帐户或目录；移除书库则会清除该根的目录、批注和进度。
 
-- **Docker 镜像：** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.6`
+- **Docker 镜像：** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.7`
 - **Docker/Container Manager 模板：** 本仓库
 - **版本说明和下载资产：** GitHub Releases
 - **Synology `.spk`：** GitHub Releases（`x86-64` DSM 7）
