@@ -36,6 +36,11 @@ multi-platform digest `sha256:6bf3d1252d4372385aa9e6ca1488cebe8f44a6c407724e86db
 Docker `0.1.6` was published with the browser localization bundle and the multi-platform
 digest `sha256:f8bb79cc17c32ebb562343c52d040b0092c473ea227d3e5e7dc5929c043b83b6`.
 
+Docker `0.1.7` was anonymously pulled and verified on 2026-07-27 (empty
+`~/.docker/config.json`, public GHCR package visibility confirmed via the API). The
+published multi-platform image digest reported by Docker is
+`sha256:0ef6b49d2ae2534fdb72e4b064563e9a6c7291bb33313b29ce9c16c772843e5f`.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
