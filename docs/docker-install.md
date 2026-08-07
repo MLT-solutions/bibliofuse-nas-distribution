@@ -125,6 +125,10 @@ Tailscale access to the browser uses the NAS/server's Tailscale address followed
 `:7343`. This is browser access; it does not add Docker pairing to the currently
 released iOS or visionOS apps.
 
+For reaching a separate Kavita or Komga server remotely and pairing it into the
+BiblioFuse app's OPDS Add Server screen, see the
+[Tailscale remote access guide](remote-access-tailscale.md) instead.
+
 ## Troubleshooting
 
 ### The library picker is empty

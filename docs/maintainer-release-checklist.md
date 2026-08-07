@@ -48,6 +48,16 @@ visibility confirmed via the API, `docker manifest inspect` succeeded with no st
 fixes an iOS WebKit crash reproduced and diagnosed on a physical iPhone via Console.app
 system log capture — see [v0.1.8 release notes](releases/v0.1.8.md).
 
+Docker `0.1.9` was anonymously pulled and verified on 2026-08-07 (`docker manifest
+inspect` succeeded with no stored `ghcr.io` credentials in `~/.docker/config.json`).
+The published multi-platform image digest reported by Docker is
+`sha256:27e004d5c966b494fba17650917cb620b655257507af019fc95b98f6044ef20a`. This release
+adds the Tailscale Serve Remote Access and Subnet Access Settings wizards for reaching
+Kavita/Komga remotely — see [v0.1.9 release notes](releases/v0.1.9.md). The native
+Synology `.spk` was not rebuilt for this release and remains `0.1.0-0021`; ARM64 `.spk`
+and fresh-install/upgrade/uninstall physical-hardware validation are still outstanding
+from the checklist below.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
