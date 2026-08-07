@@ -4,7 +4,7 @@
 
 ## Status saat ini
 
-Paket x86-64 `0.1.0-0021` adalah rilis DSM 7. Nama shared folder, alamat NAS, dan jalur pustaka tidak ditanamkan ke paket. Buku tetap di shared folder DSM yang ada; BiblioFuse tidak dapat memberi dirinya akses atau mengubah izin DSM. Settings menjelaskan pemberian izin baca-saja untuk akun paket terbatas; Attach dan Detach hanya mengatur pengindeksan dan tidak pernah menghapus berkas pustaka. Paket ini bukan kontainer: Package Center mengelola siklus hidup, ikon menu utama, dan akun internal sistem yang dibatasi.
+Paket x86-64 `0.1.0-0043` adalah rilis DSM 7. Nama shared folder, alamat NAS, dan jalur pustaka tidak ditanamkan ke paket. Buku tetap di shared folder DSM yang ada; BiblioFuse tidak dapat memberi dirinya akses atau mengubah izin DSM. Settings menjelaskan pemberian izin baca-saja untuk akun paket terbatas; Attach dan Detach hanya mengatur pengindeksan dan tidak pernah menghapus berkas pustaka. Paket ini bukan kontainer: Package Center mengelola siklus hidup, ikon menu utama, dan akun internal sistem yang dibatasi.
 
 ## Bahasa browser
 

@@ -4,7 +4,7 @@
 
 ## Huidige status
 
-Het x86-64-pakket `0.1.0-0021` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
+Het x86-64-pakket `0.1.0-0043` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
 
 - geen naam van gedeelde map, NAS-adres of bibliotheekpad is in het pakket ingebouwd;
 - boeken blijven in hun bestaande DSM-gedeelde mappen;

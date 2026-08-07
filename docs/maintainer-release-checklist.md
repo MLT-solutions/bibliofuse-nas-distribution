@@ -53,10 +53,9 @@ inspect` succeeded with no stored `ghcr.io` credentials in `~/.docker/config.jso
 The published multi-platform image digest reported by Docker is
 `sha256:27e004d5c966b494fba17650917cb620b655257507af019fc95b98f6044ef20a`. This release
 adds the Tailscale Serve Remote Access and Subnet Access Settings wizards for reaching
-Kavita/Komga remotely — see [v0.1.9 release notes](releases/v0.1.9.md). The native
-Synology `.spk` was not rebuilt for this release and remains `0.1.0-0021`; ARM64 `.spk`
-and fresh-install/upgrade/uninstall physical-hardware validation are still outstanding
-from the checklist below.
+Kavita/Komga remotely — see [v0.1.9 release notes](releases/v0.1.9.md). The Synology
+`.spk` was rebuilt as `BiblioFuseNAS-0.1.0-0043-x86_64.spk` and fresh-install, upgrade
+and uninstall were validated on a physical DS923+. ARM64 `.spk` remains unbuilt.
 
 ## Validation
 
