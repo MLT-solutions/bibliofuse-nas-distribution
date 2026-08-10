@@ -14,7 +14,7 @@ BiblioFuse NAS gratis di-host dalam Docker atau Synology Container Manager; pust
 
 | Host atau klien | Ketersediaan | Dukungan membaca dan koneksi |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Beta publik `0.1.8` | Server gratis, UI browser, streaming native Wi-Fi lokal |
+| Docker / Synology Container Manager | Beta publik `0.1.10` | Server gratis, UI browser, streaming native Wi-Fi lokal |
 | Pembaca web BiblioFuse | Termasuk | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT, Markdown |
 | Aplikasi iOS / visionOS yang dirilis dengan Docker | Wi-Fi lokal | Penemuan Bonjour dan streaming HTTPS yang dipin; Premium diterapkan aplikasi native |
 | Aplikasi Synology Package Center (`.spk`) | Rilis x86-64 publik | Paket non-root dengan panduan akses baca-saja ke folder DSM yang ada |
@@ -86,7 +86,7 @@ docker compose up -d
 
 Membuat ulang kontainer dengan folder config yang sama tidak menghapus akun atau katalog; melepas pustaka menghapus katalog, anotasi, dan progres akar tersebut.
 
-- **Image Docker:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.8`
+- **Image Docker:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.10`
 - **Templat Docker dan Container Manager:** repositori ini
 - **Catatan versi dan aset unduhan:** GitHub Releases
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)

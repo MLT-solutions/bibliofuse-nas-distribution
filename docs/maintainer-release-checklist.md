@@ -62,6 +62,15 @@ Kavita/Komga remotely — see [v0.1.9 release notes](releases/v0.1.9.md). The Sy
 `.spk` was rebuilt as `BiblioFuseNAS-0.1.0-0043-x86_64.spk` and fresh-install, upgrade
 and uninstall were validated on a physical DS923+. ARM64 `.spk` remains unbuilt.
 
+Docker `0.1.10` was anonymously fetched and inspected through the public GHCR registry
+API on 2026-08-10. The OCI index contains `linux/amd64` and `linux/arm64` images plus
+provenance/SBOM attestation manifests. Both runtime filesystems contain the stripped,
+static BiblioFuse executable and required Alpine runtime files, with no source tree,
+Dockerfile or source-code files. The multi-platform digest is
+`sha256:826995ce40f6b1a93b33b87795969516613e1649859ae49a4a2982d1c8aa1b8d`.
+The DSM 7 x86-64 package was rebuilt as `BiblioFuseNAS-0.1.0-0050-x86_64.spk`;
+physical Synology fresh-install and upgrade validation for build 0050 remains pending.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.

@@ -25,7 +25,7 @@ The BiblioFuse server source code is maintained separately and is not included h
 
 | Host or client | Availability | Reading and connection support |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Public beta `0.1.9` | Free server, browser UI and Local Wi-Fi native streaming |
+| Docker / Synology Container Manager | Public beta `0.1.10` | Free server, browser UI and Local Wi-Fi native streaming |
 | BiblioFuse web reader | Included | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT and Markdown |
 | Released iOS / visionOS apps with Docker | Supported on Local Wi-Fi | Bonjour discovery and pinned HTTPS streaming; Premium is enforced by the native app |
 | Synology Package Center app (`.spk`) | Public x86-64 release | Non-root package with guided read-only access to existing DSM shared folders |
@@ -215,7 +215,7 @@ annotations and reading progress while leaving the read-only library files intac
 
 The intended public release channels are:
 
-- **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.9`
+- **Docker image:** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.10`
 - **Docker and Synology Container Manager templates:** this repository
 - **Version notes and downloadable assets:** GitHub Releases
 - **Synology `.spk`:** GitHub Releases (`x86-64` DSM 7)
