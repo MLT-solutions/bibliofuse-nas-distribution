@@ -4,7 +4,9 @@
 
 ## État actuel
 
-Le paquet x86-64 `0.1.0-0043` est la version DSM 7. Il fournit un flux d'accès simple sans root :
+> **Important :** Installez `0.1.0-0045` uniquement avec [BiblioFuse pour iOS 2.1.8 (105) ou version ultérieure](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+
+Le paquet x86-64 `0.1.0-0045` est la version DSM 7. Il fournit un flux d'accès simple sans root :
 
 - aucun nom de dossier partagé, adresse NAS ou chemin de bibliothèque n'est intégré au paquet ;
 - les livres restent dans leurs dossiers partagés DSM existants ;

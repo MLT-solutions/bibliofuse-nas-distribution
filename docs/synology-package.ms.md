@@ -4,7 +4,9 @@
 
 ## Status semasa
 
-Pakej x86-64 `0.1.0-0043` ialah keluaran DSM 7. Nama folder kongsi, alamat NAS dan laluan pustaka tidak dimasukkan ke dalam pakej. Buku kekal dalam folder kongsi DSM sedia ada; BiblioFuse tidak dapat memberi akses kepada dirinya atau mengubah kebenaran DSM. Settings menerangkan pemberian akses baca sahaja kepada akaun pakej terhad; Attach dan Detach hanya mengawal pengindeksan dan tidak memadam fail pustaka. Ini bukan kontena: Package Center mengurus kitar hayat, ikon menu utama dan akaun dalaman sistem yang terhad.
+> **Penting:** Pasang `0.1.0-0045` hanya dengan [BiblioFuse untuk iOS 2.1.8 (105) atau lebih baharu](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+
+Pakej x86-64 `0.1.0-0045` ialah keluaran DSM 7. Nama folder kongsi, alamat NAS dan laluan pustaka tidak dimasukkan ke dalam pakej. Buku kekal dalam folder kongsi DSM sedia ada; BiblioFuse tidak dapat memberi akses kepada dirinya atau mengubah kebenaran DSM. Settings menerangkan pemberian akses baca sahaja kepada akaun pakej terhad; Attach dan Detach hanya mengawal pengindeksan dan tidak memadam fail pustaka. Ini bukan kontena: Package Center mengurus kitar hayat, ikon menu utama dan akaun dalaman sistem yang terhad.
 
 ## Bahasa pelayar
 

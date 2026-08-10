@@ -8,6 +8,11 @@ This is a publication checklist, not an end-user install guide.
 - [x] Keep the server source repository private.
 - [x] Confirm the public repository contains no source, credentials, private addresses,
       production configuration, signing material or customer/library data.
+- [ ] Before every public push and release-tag creation, audit the staged files and final
+      tag against the allowlist: documentation, Compose templates, approved static
+      assets, checksums and release binaries only. Reject source directories, Dockerfiles
+      and code extensions (`.go`, `.js`, `.ts`, `.swift`, `.py`, `.java`, `.cs`, `.rs`,
+      `.c`, `.cpp`, `.h`).
 - [ ] Add a support/contact path and an explicit license or terms decision.
 - [ ] Link the repository from the NAS/Docker page on `bibliofuse.com`.
 
@@ -82,6 +87,8 @@ and uninstall were validated on a physical DS923+. ARM64 `.spk` remains unbuilt.
 - [x] Publish checksums for downloadable assets.
 - [x] Add the generic `.spk` and checksum after DSM ACL attach/detach, upgrade and
       Local Wi-Fi Bonjour validation.
+- [ ] State the minimum compatible native-app version in the release notes and Synology
+      package guide before publishing a new `.spk`.
 - [ ] Keep older releases available for rollback, with database compatibility warnings.
 
 ## Website
