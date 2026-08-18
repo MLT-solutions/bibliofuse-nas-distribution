@@ -139,8 +139,9 @@ not create, move or assume a library folder. A Settings guide shows how to grant
 account read-only access to an existing shared folder. The folder picker then lists only
 shares the account can actually read; Attach and Detach never delete book files.
 
-See the [native Synology package guide](docs/synology-package.md) for installation and
-permissions.
+See the [native Synology package guide](docs/synology-package.md) for installation,
+permissions, and how to add BiblioFuse as a Package Source so Package Center notifies
+you of future updates instead of reinstalling manually each release.
 
 ## Remote access to Kavita or Komga
 

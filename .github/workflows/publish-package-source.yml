@@ -1,0 +1,54 @@
+name: Publish package source
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to publish (defaults to the triggering release)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Determine release tag
+        id: tag
+        run: |
+          TAG="${{ inputs.tag }}"
+          if [ -z "$TAG" ]; then
+            TAG="${{ github.event.release.tag_name }}"
+          fi
+          if [ -z "$TAG" ]; then
+            echo "no tag resolved" >&2
+            exit 1
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Regenerate synology-repo.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: sh scripts/generate-synology-repo.sh "${{ steps.tag.outputs.tag }}" /tmp/synology-repo.json
+
+      - name: Publish to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git checkout gh-pages
+          cp /tmp/synology-repo.json synology-repo.json
+          if git diff --quiet -- synology-repo.json; then
+            echo "no change"
+            exit 0
+          fi
+          git add synology-repo.json
+          git commit -m "Update synology-repo.json for ${{ steps.tag.outputs.tag }}"
+          git push origin gh-pages

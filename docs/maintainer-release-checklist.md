@@ -114,6 +114,9 @@ fresh-install and upgrade validation for build 0056 remains pending.
 - [ ] State the minimum compatible native-app version in the release notes and Synology
       package guide before publishing a new `.spk`.
 - [ ] Keep older releases available for rollback, with database compatibility warnings.
+- [x] Confirm `.github/workflows/publish-package-source.yml` regenerated
+      `synology-repo.json` on `gh-pages` with the new release's version, link and md5
+      after publishing (see `docs/synology-package.md#add-bibliofuse-as-a-package-source-recommended-for-automatic-updates`).
 
 ## Website
 

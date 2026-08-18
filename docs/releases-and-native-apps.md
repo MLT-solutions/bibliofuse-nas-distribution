@@ -13,6 +13,7 @@ Release locations:
 | Compose templates and guides | This repository |
 | Versioned notes, checksums and downloads | GitHub Releases |
 | Synology Package Center file (`.spk`) | GitHub Releases (`x86-64` DSM 7) |
+| Synology Package Center auto-update feed | `https://mlt-solutions.github.io/bibliofuse-nas-distribution/synology-repo.json` |
 | Product overview and native-app links | [bibliofuse.com](https://bibliofuse.com) |
 
 ## Free and Premium boundary

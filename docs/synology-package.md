@@ -42,6 +42,23 @@ upgrades.
 No `/volume1/...` or `/var/packages/...` path needs to be typed. No package restart is
 needed after granting access.
 
+## Add BiblioFuse as a Package Source (recommended, for automatic updates)
+
+Manual Install works for a first install, but Package Center only offers an **Update**
+button for packages that came from a registered Package Source. Adding this feed once
+means future releases show up the same way an officially listed package does.
+
+1. Open DSM **Package Center** → **Settings** → **Package Sources** → **Add**.
+2. Name: `BiblioFuse NAS`.
+3. Location: `https://mlt-solutions.github.io/bibliofuse-nas-distribution/synology-repo.json`
+4. Save, then reopen Package Center. **BiblioFuse NAS** appears under **Community** and
+   can be installed or updated from there going forward.
+
+This feed is a static file, regenerated automatically from each GitHub Release; it lists
+only the official x86-64 `.spk` published in this repository, with its checksum.
+Package Center still validates the downloaded archive itself before installing or
+upgrading.
+
 ## Data lifecycle
 
 - **Disable:** retain the catalog and allow the attachment to be enabled again.
