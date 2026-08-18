@@ -1,0 +1,31 @@
+{
+  "packages": [
+    {
+      "package": "BiblioFuseNAS",
+      "version": "0.1.0-0056",
+      "dname": "BiblioFuse NAS",
+      "desc": "Private ebook and comic library with a free browser reader.",
+      "link": "https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases/download/v0.1.11/BiblioFuseNAS-0.1.0-0056-x86_64.spk",
+      "thumbnail": [
+        "https://mlt-solutions.github.io/bibliofuse-nas-distribution/icon_64.png"
+      ],
+      "thumbnail_retina": [
+        "https://mlt-solutions.github.io/bibliofuse-nas-distribution/icon_256.png",
+        "https://mlt-solutions.github.io/bibliofuse-nas-distribution/icon_256.png"
+      ],
+      "qinst": true,
+      "qupgrade": true,
+      "qstart": true,
+      "download_count": 0,
+      "recent_download_count": 0,
+      "snapshot": [],
+      "distributor": "MLT Solutions",
+      "distributor_url": "https://bibliofuse.com",
+      "maintainer": "MLT Solutions",
+      "maintainer_url": "https://bibliofuse.com",
+      "md5": "ddbd62839c1e8e2b03708317929a684d",
+      "size": 13291520,
+      "startable": "yes"
+    }
+  ]
+}
