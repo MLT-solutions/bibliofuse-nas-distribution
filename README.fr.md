@@ -22,7 +22,7 @@ Ce dépôt public de distribution contient les fichiers d'installation et la doc
 
 | Hôte ou client | Disponibilité | Lecture et connexion |
 | --- | --- | --- |
-| Docker / Synology Container Manager | Bêta publique `0.1.10` | Serveur, interface navigateur et streaming natif Wi-Fi local gratuits |
+| Docker / Synology Container Manager | Bêta publique `0.1.11` | Serveur, interface navigateur et streaming natif Wi-Fi local gratuits |
 | Lecteur web BiblioFuse | Inclus | CBZ, ZIP, CBR, RAR, EPUB, TXT, TEXT et Markdown |
 | Apps iOS / visionOS publiées avec Docker | Pris en charge sur le Wi-Fi local | Découverte Bonjour et streaming HTTPS épinglé ; Premium est appliqué par l'app native |
 | App Synology Package Center (`.spk`) | Version publique x86-64 | Paquet non-root avec accès guidé en lecture seule aux dossiers partagés DSM existants |
@@ -159,7 +159,7 @@ Détacher une bibliothèque est différent : cela purge le catalogue BiblioFuse 
 
 Les canaux de diffusion publics prévus sont :
 
-- **Image Docker :** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.10`
+- **Image Docker :** `ghcr.io/mlt-solutions/bibliofuse-nas:0.1.11`
 - **Modèles Docker et Synology Container Manager :** ce dépôt
 - **Notes de version et ressources téléchargeables :** GitHub Releases
 - **Synology `.spk` :** GitHub Releases (`x86-64` DSM 7)

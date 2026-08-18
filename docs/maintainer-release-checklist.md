@@ -71,6 +71,21 @@ Dockerfile or source-code files. The multi-platform digest is
 The DSM 7 x86-64 package was rebuilt as `BiblioFuseNAS-0.1.0-0050-x86_64.spk`;
 physical Synology fresh-install and upgrade validation for build 0050 remains pending.
 
+Docker `0.1.11` was anonymously fetched and inspected through the public GHCR registry
+API on 2026-08-18 (no stored `ghcr.io` credentials in `~/.docker/config.json`). The OCI
+index contains `linux/amd64` and `linux/arm64` images plus provenance/SBOM attestation
+manifests. The `linux/amd64` image's layers were downloaded and listed directly:
+one layer holds only the stripped, trimpathed static BiblioFuse executable at
+`/usr/local/bin/bibliofuse`, the base layers hold only expected Alpine/busybox and
+ca-certificates files, and the final layer holds only the empty `/config`, `/cache` and
+`/library` directories — no source tree, `Dockerfile`, or absolute local machine paths
+in any layer or embedded in the binary's symbol table. The multi-platform digest is
+`sha256:87e95083f6b09f10b1f5e0205b1ad3508923ecbb8710e9863ad018f50ded5187`.
+The DSM 7 x86-64 package was rebuilt as `BiblioFuseNAS-0.1.0-0056-x86_64.spk`
+(SHA-256 `f0ee31922b51afddecf196425f838aa0b23c9e5da228da55ae86754a243424d4`); its archive
+was extracted and inspected locally with the same result. Physical Synology
+fresh-install and upgrade validation for build 0056 remains pending.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.

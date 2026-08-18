@@ -4,9 +4,9 @@
 
 ## Estado actual
 
-> **Importante:** Instale `0.1.0-0050` solo con [BiblioFuse para iOS 2.1.8 (105) o posterior](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+> **Importante:** Instale `0.1.0-0056` solo con [BiblioFuse para iOS 2.1.8 (105) o posterior](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
 
-El paquete x86-64 `0.1.0-0050` es la versión DSM 7. Proporciona un flujo de acceso sencillo y sin root:
+El paquete x86-64 `0.1.0-0056` es la versión DSM 7. Proporciona un flujo de acceso sencillo y sin root:
 
 - ningún nombre de carpeta compartida, dirección NAS o ruta de biblioteca está integrado en el paquete;
 - los libros permanecen en sus carpetas compartidas DSM existentes;
