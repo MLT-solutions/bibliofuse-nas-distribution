@@ -86,6 +86,27 @@ The DSM 7 x86-64 package was rebuilt as `BiblioFuseNAS-0.1.0-0056-x86_64.spk`
 was extracted and inspected locally with the same result. Physical Synology
 fresh-install and upgrade validation for build 0056 remains pending.
 
+Docker `0.1.12` carries the EPUB illustration fix — see [v0.1.12 release notes](releases/v0.1.12.md).
+It was anonymously fetched and inspected through the public GHCR registry API on
+2026-09-02 (registry token obtained with no credentials, confirming public visibility).
+The OCI index contains `linux/amd64` and `linux/arm64` images plus provenance/SBOM
+attestation manifests. The `linux/amd64` image's four layers were downloaded and listed
+directly: the base layers hold only expected Alpine/busybox and ca-certificates files,
+one layer holds only the stripped, trimpathed static BiblioFuse executable at
+`/usr/local/bin/bibliofuse`, and the final layer holds only the empty `/config`, `/cache`
+and `/library` directories — no source tree, `Dockerfile`, code-extension files, or
+absolute local machine paths in any layer or embedded in the binary. The multi-platform
+digest is `sha256:f68f59e67bd09479008e371b54589ba1da8c11061532428b0d5882031e8aaa5a`.
+The DSM 7 x86-64 package was rebuilt as
+`BiblioFuseNAS-0.1.0-0057-x86_64.spk` (SHA-256
+`e2db3a1ea084bbc43c228d7c3d060a91d650b89618bb5d0802b1bc3ebc721b14`); its archive was
+extracted and inspected locally — one static, stripped, trimpathed server executable plus
+package metadata, UI resources and the port-config file, with no source tree, no
+`Dockerfile`, no code-extension files and no absolute local machine paths. Build 0057 was
+installed on physical Synology hardware and the EPUB illustration fix verified there
+before release.
+
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.

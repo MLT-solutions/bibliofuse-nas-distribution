@@ -4,9 +4,9 @@
 
 ## Huidige status
 
-> **Belangrijk:** Installeer `0.1.0-0056` alleen met [BiblioFuse voor iOS 2.1.8 (105) of nieuwer](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+> **Belangrijk:** Installeer `0.1.0-0057` alleen met [BiblioFuse voor iOS 2.1.8 (105) of nieuwer](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
 
-Het x86-64-pakket `0.1.0-0056` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
+Het x86-64-pakket `0.1.0-0057` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
 
 - geen naam van gedeelde map, NAS-adres of bibliotheekpad is in het pakket ingebouwd;
 - boeken blijven in hun bestaande DSM-gedeelde mappen;

@@ -4,9 +4,9 @@
 
 ## Status saat ini
 
-> **Penting:** Instal `0.1.0-0056` hanya dengan [BiblioFuse untuk iOS 2.1.8 (105) atau yang lebih baru](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+> **Penting:** Instal `0.1.0-0057` hanya dengan [BiblioFuse untuk iOS 2.1.8 (105) atau yang lebih baru](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
 
-Paket x86-64 `0.1.0-0056` adalah rilis DSM 7. Nama shared folder, alamat NAS, dan jalur pustaka tidak ditanamkan ke paket. Buku tetap di shared folder DSM yang ada; BiblioFuse tidak dapat memberi dirinya akses atau mengubah izin DSM. Settings menjelaskan pemberian izin baca-saja untuk akun paket terbatas; Attach dan Detach hanya mengatur pengindeksan dan tidak pernah menghapus berkas pustaka. Paket ini bukan kontainer: Package Center mengelola siklus hidup, ikon menu utama, dan akun internal sistem yang dibatasi.
+Paket x86-64 `0.1.0-0057` adalah rilis DSM 7. Nama shared folder, alamat NAS, dan jalur pustaka tidak ditanamkan ke paket. Buku tetap di shared folder DSM yang ada; BiblioFuse tidak dapat memberi dirinya akses atau mengubah izin DSM. Settings menjelaskan pemberian izin baca-saja untuk akun paket terbatas; Attach dan Detach hanya mengatur pengindeksan dan tidak pernah menghapus berkas pustaka. Paket ini bukan kontainer: Package Center mengelola siklus hidup, ikon menu utama, dan akun internal sistem yang dibatasi.
 
 ## Bahasa browser
 
