@@ -106,6 +106,19 @@ package metadata, UI resources and the port-config file, with no source tree, no
 installed on physical Synology hardware and the EPUB illustration fix verified there
 before release.
 
+Docker `0.1.13` carries progress, bookmark and annotation sync — see
+[v0.1.13 release notes](releases/v0.1.13.md). Its OCI index (inspected on 2026-10-10)
+contains `linux/amd64` and `linux/arm64` images plus provenance/SBOM attestation
+manifests. The multi-platform digest is
+`sha256:07fd2e5d07481b9ebcd2a2263292407e0e732be8ad04c27b8bf0b1c24673d5d1`.
+The DSM 7 x86-64 package was rebuilt as `BiblioFuseNAS-0.1.0-0066-x86_64.spk` (SHA-256
+`775a7a81b5b911e7876f554ffe097cc8b6e5230ee99c30b9294bed075e2f38a7`); its archive was
+extracted and inspected locally — one static, stripped, trimpathed server executable plus
+package metadata, UI resources and the port-config file, with no source tree, no
+`Dockerfile`, no code-extension files and no absolute local machine paths. Build 0065 was
+installed and tested on physical Synology hardware before release; build 0066 is the same
+code with only the build number incremented.
+
 
 ## Validation
 
