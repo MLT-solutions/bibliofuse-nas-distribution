@@ -27,6 +27,23 @@ Docker dan pembaca browser tetap gratis. Streaming native adalah fitur Premium a
 
 Aplikasi browser dapat mengikuti bahasa sistem atau memilih English, Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korean, Indonesian, atau Malay di Settings. Pilihan hanya disimpan di browser dan tidak mengubah konfigurasi server, metadata pustaka, atau klien native.
 
+## Sinkronisasi progres, bookmark, dan anotasi
+
+Progres membaca, bookmark, dan anotasi (sorotan dan catatan) kini tetap tersinkron antara
+pembaca browser BiblioFuse dan aplikasi BiblioFuse di iPhone, iPad, ponsel Android, dan
+tablet Android. Mulai membaca di browser lalu lanjutkan di ponsel atau tablet tepat di
+tempat Anda berhenti, atau sebaliknya.
+
+- **Progres membaca:** browser dan perangkat Anda berbagi satu posisi baca per buku,
+  sehingga buku terbuka kembali di tempat Anda berhenti, di mana pun itu.
+- **Bookmark:** bookmark yang ditambahkan di browser muncul di perangkat Anda, dan
+  bookmark dari perangkat muncul di browser.
+- **Sorotan dan catatan:** sorotan (lima warna) dan catatan, termasuk catatan berformat,
+  tersinkron dua arah. Halaman **Anotasi** di browser menampilkan semuanya di satu tempat.
+- **Privat sejak awal:** semuanya disimpan di server BiblioFuse Anda sendiri, di folder
+  config, dan ikut dalam cadangan BiblioFuse. Tidak perlu akun cloud. Sinkronisasi aktif
+  secara default; gunakan aplikasi BiblioFuse terbaru di setiap perangkat.
+
 ## Harapan performa
 
 NAS yang selalu hidup nyaman, privat, dan hemat daya, tetapi biasanya lebih lambat daripada Mac/PC modern dalam menyiapkan halaman komik/arsip. Mac/PC terbaik untuk pembacaan native mulus; NAS ideal untuk pustaka pribadi yang selalu tersedia. CPU memengaruhi pengindeksan, dekompresi, thumbnail, dan persiapan halaman berikutnya. SSD/NVMe dapat membantu pembacaan dingin dan akses berulang, tetapi tidak membuat CPU NAS berdaya rendah setara desktop. Mode komik berkelanjutan memuat halaman bertahap; jeda singkat pada halaman berikut yang belum di-cache adalah normal. Server melakukan cache dan pra-persiapan halaman berikutnya.

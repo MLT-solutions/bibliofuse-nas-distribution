@@ -27,6 +27,23 @@ Docker dan pembaca pelayar kekal percuma. Penstriman asli ialah ciri Premium apl
 
 Aplikasi pelayar boleh mengikut bahasa sistem atau memilih English, Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korean, Indonesian, atau Malay dalam Settings. Pilihan disimpan dalam pelayar itu sahaja dan tidak mengubah konfigurasi pelayan, metadata pustaka atau klien asli.
 
+## Segerakkan kemajuan, penanda buku dan anotasi
+
+Kemajuan bacaan, penanda buku dan anotasi (sorotan dan nota) kini kekal tersegerak antara
+pembaca pelayar BiblioFuse dan aplikasi BiblioFuse pada iPhone, iPad, telefon Android dan
+tablet Android. Mula membaca dalam pelayar dan teruskan pada telefon atau tablet tepat di
+tempat anda berhenti, atau sebaliknya.
+
+- **Kemajuan bacaan:** pelayar dan peranti anda berkongsi satu kedudukan bacaan bagi setiap
+  buku, jadi buku dibuka semula di tempat anda berhenti, di mana-mana sahaja.
+- **Penanda buku:** penanda buku yang ditambah dalam pelayar muncul pada peranti anda, dan
+  penanda buku daripada peranti muncul dalam pelayar.
+- **Sorotan dan nota:** sorotan (lima warna) dan nota, termasuk nota berformat,
+  disegerakkan dua hala. Halaman **Anotasi** dalam pelayar memaparkan semuanya di satu tempat.
+- **Peribadi mengikut reka bentuk:** semuanya disimpan pada pelayan BiblioFuse anda sendiri,
+  dalam folder config, dan disertakan dalam sandaran BiblioFuse. Tiada akaun awan diperlukan.
+  Penyegerakan dihidupkan secara lalai; gunakan aplikasi BiblioFuse terkini pada setiap peranti.
+
 ## Jangkaan prestasi
 
 NAS yang sentiasa hidup adalah mudah, peribadi dan jimat kuasa, tetapi biasanya lebih perlahan daripada Mac/PC moden ketika menyediakan halaman komik atau arkib. Mac/PC terbaik untuk pembacaan asli yang lancar; NAS sesuai untuk pustaka peribadi yang sentiasa tersedia. CPU mempengaruhi pengindeksan, nyahmampat, thumbnail dan penyediaan halaman seterusnya. SSD/NVMe membantu bacaan sejuk dan akses berulang tetapi tidak menjadikan CPU NAS kuasa rendah setara desktop. Mod komik berterusan memuat halaman secara beransur; jurang ringkas bagi halaman belum cache adalah normal. Pelayan menyimpan cache halaman dan menyediakan halaman seterusnya lebih awal.

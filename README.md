@@ -42,6 +42,24 @@ Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korea
 Indonesian, or Malay. This language choice stays in the browser and does not change
 server configuration, book metadata, or native clients.
 
+## Sync progress, bookmarks and annotations
+
+Reading progress, bookmarks and annotations (highlights and notes) now stay in sync
+between the BiblioFuse browser reader and the BiblioFuse apps on iPhone, iPad, Android
+phones and Android tablets. Start reading in the browser and continue on a phone or
+tablet exactly where you left off, or the other way around.
+
+- **Reading progress:** the browser and your devices share one reading position per
+  book, so a book reopens where you stopped, wherever you stopped.
+- **Bookmarks:** a bookmark added in the browser appears on your devices, and bookmarks
+  added on your devices appear in the browser.
+- **Highlights and notes:** highlights (five colors) and notes, including formatted
+  notes, sync in both directions. The browser's **Annotations** page lists them all in
+  one place.
+- **Private by design:** everything is stored on your own BiblioFuse server, in its
+  config folder, and is included in BiblioFuse backups. No cloud account is needed.
+  Sync is on by default; use the latest BiblioFuse app on each device.
+
 ## Performance expectations
 
 An always-on NAS is convenient, private and power-efficient, but it is not normally
@@ -171,7 +189,7 @@ the container.
 - Plain text: TXT, TEXT and Markdown
 
 Comic archives support paged and continuous reading modes. EPUB and text reading
-position is stored by the web UI. PDF is not currently included in the Docker web
+position is saved on your server and shared with your BiblioFuse apps. PDF is not currently included in the Docker web
 reader.
 
 ## Passwords and security

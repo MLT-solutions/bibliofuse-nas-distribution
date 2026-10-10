@@ -4,7 +4,7 @@
 
 ## État actuel
 
-> **Important :** Installez `0.1.0-0057` uniquement avec [BiblioFuse pour iOS 2.1.8 (105) ou version ultérieure](https://appstoreconnect.apple.com/teams/94c57d4b-571f-4fc1-bee8-61d285a65029/apps/6758330093/testflight/visionos/768998c3-02f2-45e6-b22a-30599d0485ae).
+> **Important :** Installez `0.1.0-0057` uniquement avec BiblioFuse pour iOS 2.1.8 (105) ou version ultérieure.
 
 Le paquet x86-64 `0.1.0-0057` est la version DSM 7. Il fournit un flux d'accès simple sans root :
 

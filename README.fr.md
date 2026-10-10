@@ -35,6 +35,27 @@ Docker et le lecteur navigateur restent gratuits. Le streaming natif est une fon
 
 L'app navigateur peut suivre la langue système ou être définie dans Réglages sur anglais, espagnol, français, néerlandais, portugais, russe, chinois simplifié, japonais, coréen, indonésien ou malais. Ce choix reste dans le navigateur et ne modifie pas la configuration serveur, les métadonnées des livres ni les clients natifs.
 
+## Synchronisation de la progression, des signets et des annotations
+
+La progression de lecture, les signets et les annotations (surlignages et notes) restent
+synchronisés entre le lecteur de navigateur BiblioFuse et les apps BiblioFuse sur
+iPhone, iPad, téléphones Android et tablettes Android. Commencez à lire dans le
+navigateur et reprenez sur un téléphone ou une tablette exactement là où vous vous étiez
+arrêté, ou inversement.
+
+- **Progression de lecture :** le navigateur et vos appareils partagent une seule
+  position de lecture par livre ; le livre se rouvre donc là où vous vous êtes arrêté,
+  quel que soit l'appareil.
+- **Signets :** un signet ajouté dans le navigateur apparaît sur vos appareils, et les
+  signets ajoutés sur vos appareils apparaissent dans le navigateur.
+- **Surlignages et notes :** les surlignages (cinq couleurs) et les notes, y compris les
+  notes mises en forme, se synchronisent dans les deux sens. La page **Annotations** du
+  navigateur les regroupe au même endroit.
+- **Privé par conception :** tout est stocké sur votre propre serveur BiblioFuse, dans
+  son dossier de configuration, et inclus dans les sauvegardes BiblioFuse. Aucun compte
+  cloud n'est nécessaire. La synchronisation est activée par défaut ; utilisez la
+  dernière app BiblioFuse sur chaque appareil.
+
 ## Attentes de performances
 
 Un NAS toujours actif est pratique, privé et économe en énergie, mais il n'est normalement pas aussi rapide qu'un Mac ou PC moderne pour préparer les pages de BD et d'archives.
@@ -125,7 +146,7 @@ Les heures sont disponibles par intervalles de 30 minutes et utilisent `BF_TIME_
 - Livres réadaptables : EPUB
 - Texte brut : TXT, TEXT et Markdown
 
-Les archives de BD prennent en charge les modes paginé et défilement continu. La position de lecture EPUB et texte est stockée par l'interface web. Le PDF n'est pas actuellement inclus dans le lecteur web Docker.
+Les archives de BD prennent en charge les modes paginé et défilement continu. La position de lecture EPUB et texte est enregistrée sur votre serveur et partagée avec vos apps BiblioFuse. Le PDF n'est pas actuellement inclus dans le lecteur web Docker.
 
 ## Mots de passe et sécurité
 

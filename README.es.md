@@ -35,6 +35,25 @@ Docker y el lector de navegador siguen siendo gratuitos. El streaming nativo es 
 
 La app de navegador puede seguir el idioma del sistema o configurarse en Ajustes en inglés, español, francés, neerlandés, portugués, ruso, chino simplificado, japonés, coreano, indonesio o malayo. Esta elección se guarda en el navegador y no cambia la configuración del servidor, los metadatos de los libros ni los clientes nativos.
 
+## Sincroniza progreso, marcadores y anotaciones
+
+El progreso de lectura, los marcadores y las anotaciones (resaltados y notas) se
+mantienen sincronizados entre el lector del navegador de BiblioFuse y las apps de
+BiblioFuse en iPhone, iPad, teléfonos Android y tabletas Android. Empieza a leer en el
+navegador y continúa en el teléfono o la tableta justo donde lo dejaste, o al revés.
+
+- **Progreso de lectura:** el navegador y tus dispositivos comparten una única posición
+  de lectura por libro, así que el libro se reabre donde lo dejaste, estés donde estés.
+- **Marcadores:** un marcador añadido en el navegador aparece en tus dispositivos, y los
+  marcadores añadidos en tus dispositivos aparecen en el navegador.
+- **Resaltados y notas:** los resaltados (cinco colores) y las notas, incluidas las
+  notas con formato, se sincronizan en ambos sentidos. La página **Anotaciones** del
+  navegador las reúne todas en un solo lugar.
+- **Privado por diseño:** todo se guarda en tu propio servidor BiblioFuse, en su carpeta
+  de configuración, y se incluye en las copias de seguridad de BiblioFuse. No hace falta
+  ninguna cuenta en la nube. La sincronización está activada de forma predeterminada;
+  usa la última app de BiblioFuse en cada dispositivo.
+
 ## Expectativas de rendimiento
 
 Un NAS siempre encendido es práctico, privado y eficiente energéticamente, pero normalmente no prepara páginas de cómics/archivos tan rápido como un Mac o PC moderno.
@@ -125,7 +144,7 @@ Las horas están disponibles en intervalos de 30 minutos y usan el `BF_TIME_ZONE
 - Ebooks refluibles: EPUB
 - Texto sin formato: TXT, TEXT y Markdown
 
-Los archivos de cómic admiten modos de lectura paginado y continuo. La posición de lectura EPUB y texto se guarda en la interfaz web. PDF no está incluido actualmente en el lector web Docker.
+Los archivos de cómic admiten modos de lectura paginado y continuo. La posición de lectura EPUB y texto se guarda en tu servidor y se comparte con tus apps de BiblioFuse. PDF no está incluido actualmente en el lector web Docker.
 
 ## Contraseñas y seguridad
 

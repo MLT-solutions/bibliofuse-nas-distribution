@@ -29,6 +29,25 @@ Docker e o leitor de navegador continuam gratuitos. O streaming nativo é uma fu
 
 A app do navegador pode seguir o idioma do sistema ou ser definida em Definições para inglês, espanhol, francês, neerlandês, português, russo, chinês simplificado, japonês, coreano, indonésio ou malaio. Esta escolha fica apenas no navegador e não altera a configuração do servidor, metadados dos livros nem clientes nativos.
 
+## Sincronize progresso, marcadores e anotações
+
+O progresso de leitura, os marcadores e as anotações (destaques e notas) permanecem
+sincronizados entre o leitor do navegador do BiblioFuse e as apps BiblioFuse em iPhone,
+iPad, telemóveis Android e tablets Android. Comece a ler no navegador e continue no
+telemóvel ou no tablet exatamente onde parou, ou vice-versa.
+
+- **Progresso de leitura:** o navegador e os seus dispositivos partilham uma única
+  posição de leitura por livro, por isso o livro reabre onde parou, seja onde for.
+- **Marcadores:** um marcador adicionado no navegador aparece nos seus dispositivos, e os
+  marcadores adicionados nos dispositivos aparecem no navegador.
+- **Destaques e notas:** os destaques (cinco cores) e as notas, incluindo notas
+  formatadas, sincronizam nos dois sentidos. A página **Anotações** do navegador reúne-os
+  num só lugar.
+- **Privado por conceção:** tudo fica guardado no seu próprio servidor BiblioFuse, na
+  pasta de configuração, e é incluído nas cópias de segurança do BiblioFuse. Não é
+  necessária nenhuma conta na nuvem. A sincronização está ativada por predefinição;
+  use a app BiblioFuse mais recente em cada dispositivo.
+
 ## Desempenho esperado
 
 Um NAS sempre ligado é conveniente, privado e eficiente em energia, mas normalmente não prepara páginas de banda desenhada/arquivo tão depressa como um Mac ou PC moderno.
@@ -108,7 +127,7 @@ Veja o [guia do pacote Synology nativo](docs/synology-package.pt.md) para instal
 - Ebooks refluíveis: EPUB
 - Texto simples: TXT, TEXT e Markdown
 
-Arquivos de banda desenhada suportam leitura paginada e contínua. A posição de leitura EPUB e texto é guardada pela interface web. PDF não está incluído atualmente no leitor web Docker.
+Arquivos de banda desenhada suportam leitura paginada e contínua. A posição de leitura EPUB e texto é guardada no seu servidor e partilhada com as suas apps BiblioFuse. PDF não está incluído atualmente no leitor web Docker.
 
 ## Palavras-passe, segurança, cópias de segurança e atualizações
 

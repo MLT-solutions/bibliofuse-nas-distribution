@@ -29,6 +29,24 @@ Docker en de browserlezer blijven gratis. Native streaming is een Premium-functi
 
 De browserapp kan de systeemtaal volgen of in Instellingen worden ingesteld op Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Vereenvoudigd Chinees, Japans, Koreaans, Indonesisch of Maleis. Deze keuze blijft in de browser en wijzigt geen serverconfiguratie, boekmetadata of native clients.
 
+## Voortgang, bladwijzers en aantekeningen synchroniseren
+
+Leesvoortgang, bladwijzers en aantekeningen (markeringen en notities) blijven
+gesynchroniseerd tussen de BiblioFuse-browserlezer en de BiblioFuse-apps op iPhone,
+iPad, Android-telefoons en Android-tablets. Begin met lezen in de browser en ga op een
+telefoon of tablet verder precies waar u was gebleven, of andersom.
+
+- **Leesvoortgang:** de browser en uw apparaten delen één leespositie per boek, zodat
+  een boek opent waar u bent gestopt, waar dat ook was.
+- **Bladwijzers:** een bladwijzer die u in de browser toevoegt, verschijnt op uw
+  apparaten, en bladwijzers van uw apparaten verschijnen in de browser.
+- **Markeringen en notities:** markeringen (vijf kleuren) en notities, ook opgemaakte
+  notities, synchroniseren in beide richtingen. De pagina **Aantekeningen** in de
+  browser toont ze allemaal op één plek.
+- **Privé door ontwerp:** alles wordt opgeslagen op uw eigen BiblioFuse-server, in de
+  configuratiemap, en valt onder BiblioFuse-back-ups. Een cloudaccount is niet nodig.
+  Synchronisatie staat standaard aan; gebruik op elk apparaat de nieuwste BiblioFuse-app.
+
 ## Prestatieverwachtingen
 
 Een altijd actieve NAS is handig, privé en energiezuinig, maar bereidt strip-/archiepagina's normaal niet zo snel voor als een moderne Mac of PC.
@@ -114,7 +132,7 @@ Automatisch vernieuwen is standaard uitgeschakeld. Kies dagelijks op een tijdsti
 - Herformatteerbare ebooks: EPUB
 - Platte tekst: TXT, TEXT en Markdown
 
-Striparchieven ondersteunen gepagineerd en doorlopend lezen. EPUB- en tekstpositie wordt door de webinterface opgeslagen. PDF is nu niet opgenomen in de Docker-weblezer.
+Striparchieven ondersteunen gepagineerd en doorlopend lezen. EPUB- en tekstpositie wordt op uw server opgeslagen en gedeeld met uw BiblioFuse-apps. PDF is nu niet opgenomen in de Docker-weblezer.
 
 ## Wachtwoorden en beveiliging
 
