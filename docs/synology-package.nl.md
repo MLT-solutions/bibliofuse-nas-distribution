@@ -4,9 +4,9 @@
 
 ## Huidige status
 
-> **Belangrijk:** Installeer `0.1.0-0066` alleen met BiblioFuse voor iOS 2.1.15 of nieuwer.
+> **Belangrijk:** Installeer `0.1.0-0067` alleen met BiblioFuse voor iOS 2.1.15 of nieuwer.
 
-Het x86-64-pakket `0.1.0-0066` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
+Het x86-64-pakket `0.1.0-0067` is de DSM 7-release. Het biedt een eenvoudige toegangsstroom zonder root:
 
 - geen naam van gedeelde map, NAS-adres of bibliotheekpad is in het pakket ingebouwd;
 - boeken blijven in hun bestaande DSM-gedeelde mappen;

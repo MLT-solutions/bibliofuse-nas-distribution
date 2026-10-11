@@ -4,9 +4,9 @@
 
 ## Estado actual
 
-> **Importante:** Instale `0.1.0-0066` solo con BiblioFuse para iOS 2.1.15 o posterior.
+> **Importante:** Instale `0.1.0-0067` solo con BiblioFuse para iOS 2.1.15 o posterior.
 
-El paquete x86-64 `0.1.0-0066` es la versión DSM 7. Proporciona un flujo de acceso sencillo y sin root:
+El paquete x86-64 `0.1.0-0067` es la versión DSM 7. Proporciona un flujo de acceso sencillo y sin root:
 
 - ningún nombre de carpeta compartida, dirección NAS o ruta de biblioteca está integrado en el paquete;
 - los libros permanecen en sus carpetas compartidas DSM existentes;

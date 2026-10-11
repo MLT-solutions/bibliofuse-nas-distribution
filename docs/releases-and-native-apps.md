@@ -28,7 +28,7 @@ boundary.
 
 ## Synology package compatibility
 
-Install `BiblioFuseNAS-0.1.0-0066-x86_64.spk` only with
+Install `BiblioFuseNAS-0.1.0-0067-x86_64.spk` only with
 BiblioFuse for iOS 2.1.15 or later.
 
 Release notes and [bibliofuse.com](https://bibliofuse.com) are authoritative for the

@@ -120,6 +120,24 @@ installed and tested on physical Synology hardware before release; build 0066 is
 code with only the build number incremented.
 
 
+Docker `0.1.14` carries the browser-reader page-resume fix — see
+[v0.1.14 release notes](releases/v0.1.14.md). It was anonymously fetched and inspected
+through the public GHCR registry API on 2026-10-11 (registry token obtained with no
+credentials, confirming public visibility). The OCI index contains `linux/amd64` and
+`linux/arm64` images plus provenance/SBOM attestation manifests. Both images' four layers
+were downloaded and listed directly: the base layers hold only expected Alpine/busybox
+and ca-certificates files, one layer holds only the stripped, trimpathed static
+BiblioFuse executable at `/usr/local/bin/bibliofuse`, and the final layer holds only the
+empty `/config`, `/cache` and `/library` directories — no source tree, `Dockerfile`,
+code-extension files, or absolute local machine paths, usernames or credentials in any
+layer or embedded in either binary. The multi-platform digest is
+`sha256:436904f6c95468b84aab8889a0789e3823c2812fc19ba0b4eb21b7738e0ecf6d`.
+The DSM 7 x86-64 package was built as `BiblioFuseNAS-0.1.0-0067-x86_64.spk` (SHA-256
+`94b06ec02630ea45b922af50aa43a1962af6b9e1ae2cecfb4d738e60d7575c40`); its archive was
+extracted and inspected locally with the same result. Build 0067 was installed and tested
+on physical Synology hardware before release. The 0.1.13 Compose files had still pinned
+`0.1.12`; the Compose files now default to `0.1.14`.
+
 ## Validation
 
 - [ ] Fresh-install Docker Compose on amd64.
